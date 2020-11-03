@@ -1,0 +1,152 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"   
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/index.css" type="text/css" >
+<link rel="stylesheet" href="css/Login.css" type="text/css" >
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Booknow</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+ 
+<script > 
+   $(document).ready(function(){
+   $("#hamburger").click(function(){
+    $("#myTopnavdrop").slideToggle();
+  });
+  });
+ </script>
+
+<script>
+$(document).ready(function(){
+   
+  var x=$("#type1 option:selected");
+    for(i=0; i<x.length; i++){
+    if (x.value() =="massage"){
+     $("#price1").val("35");}}
+});
+</script>
+
+<script>
+    $(document).ready(function () {
+        var time = new Date();
+        var day = ("0" + time.getDate()).slice(-2);
+        var month = ("0" + (time.getMonth() + 1)).slice(-2);
+        var today = time.getFullYear() + "-" + (month) + "-" + (day);
+        $('#date_info').val(today);
+        document.getElementById("date_info").setAttribute("min", today);
+        
+    })
+</script>
+
+</head>
+
+<body>
+   
+  <div id="winter"> 
+  <a href="../myweb/winterspecial.html" target="_blank" > <p>Winter <span style="color:yellow; font-size:35px">Special</span> Click Here!</p> </a>
+  </div>  
+
+ <div id="Navdiv">
+      
+    <a href="../myweb/index.html"><img id="logo" src="../myweb/Images/logo.jpg"
+    alt="Logo" float:left  height="42px"  aria-> </a>
+        
+     <p id="signin"><a href="../myweb/Login.html" > Login</a></p>
+   
+ 
+    <div class="menu" id="myTopnav">
+       <nav>
+     <a  href="../myweb/index.html ">Home</a>
+		
+     <div class="homedropdown">
+     <a  href=" ">Service</a>
+     <div class="dropdown-content">
+     <a href="#">Facial</a>
+     <a href="#">Massage</a>
+     <a href="#">Body</a>
+     </div>
+     </div>
+    
+    <a href="../myweb/winterspecial.html">Coupon</a>  
+    <a href="../myweb/Booknow.html">Booknow</a>  
+    <a href="">About Us</a> 
+    <a href="">Contact</a>  
+    </nav>
+     </div> 
+  
+  <div class="dropdown">
+    <img src="../myweb/Images/menu.png" id="hamburger"  style="width:20px; height:20px" alt=""> 
+    <div class="menudropdown" id="myTopnavdrop">
+    <a href="../myweb/index.html">Home</a>  <br>
+    <a href=" ">Facial</a>  <br>
+    <a href=" ">Massage</a>  <br>
+    <a href=" ">Body</a>  <br>
+    <a href="../myweb/Booknow.html">Booknow</a>  <br>
+    <a href=" ">About Us</a>   <br>
+    <a href=" ">Contact</a>   <br>
+    <a href="../myweb/Login.html">Login</a>  <br>
+     </div> 
+   </div>  
+ </div>
+  <div id="booking">
+
+  <div id="form">   
+   <form  action=" ">
+    First Name:
+   <input name="firstname" class="form-control" type="text" placeholder="First Name"  required>
+   Last Name:
+   <input name="lastname" type="text" class="form-control" placeholder="Last Name" required>
+   <br><br>
+
+   Please Select:
+    <select name="type1" id="type1" class="form-control" required >
+    <option value="facial">facial</option>
+    <option value="massage">massage</option>
+    <option value="body">body</option>
+   </select>
+     &nbsp &nbsp price:$<input type="text" name="price1" id="price1" class="form-control" value=" " size=3  >  
+    Choose A Date:
+  <input type="date" name="bday"  id="date_info" class="form-control" required  ><br>
+
+ Please Select:
+    <select name="type1" id="type1" class="form-control" required>
+    <option value="facial">facial</option>
+    <option value="massage">massage</option>
+    <option value="body">body</option>
+   </select>
+     &nbsp &nbsp price:$<input type="text" name="price1" id="price1" class="form-control" value=" " size=3  >  
+    Choose A Date:
+  <input type="date" name="bday"  id="date_info" class="form-control" required  ><br>
+ Please Select:
+    <select name="type2" id="type2" class="form-control" required>
+    <option value="facial">facial</option>
+    <option value="massage">massage</option>
+    <option value="body">body</option>
+   </select>
+
+     &nbsp &nbsp price:$<input type="text" name="price2" id="price2 " class="form-control" size=3 value=""  > 
+ Choose A Date:
+  <input type="date" name="bday"  id="date_info" class="form-control" required  ><br>
+
+      Total:$<input type="text" name="price" id="price" class="form-control" class="form-control" size=6> 
+     <br><br>
+   <input type="submit" style="float:right;" id="submit">
+     </form>
+  
+   </div>
+  </div>
+ 
+<div id="buttom">
+ <br>
+ <br>
+ <p class="buttontext">xxxx xth Street, NY, xxxxx | 732-xxxx-xxxx | infoxxxx@gmail.com</p>
+ <p class="buttontext">FAQ | Contact Us | Careers</p>
+ <p class="buttontext" > 732-xxxx-xxxx </p>
+
+ <a href="https://en-gb.facebook.com/login/" target="blank" > <img class="blogo" src="../myweb/Images/Facebook.png" alt=""/> </a> &nbsp &nbsp;
+ <a href="https://twitter.com/login/" target="blank" > <img class="blogo" src="../myweb/Images/Twitter.png" alt=""  /> </a>  &nbsp &nbsp
+ <a href="https://www.pinterest.com/" target="blank" > <img class="blogo" src="../myweb/Images/Pinterest.png" alt="" /> </a>
+
+</div>
+</body>
+</html>
