@@ -17,11 +17,7 @@
    color:#4F4C4C;
    
    }
-#pwd{
-	background:url("../Images/eyeon.png") no-repeat right center ;
-	background-size:1.8vw  1.8vw;
-	 
-}
+ 
 #booking {
     width:100%;   
     margin-top:60px;
@@ -45,8 +41,7 @@
 }
 
  form {
-   margin:0 auto;
-   font-size:1.3vw;z
+   margin:0 auto;    
    font-family:Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
    color:#464445;
      }
@@ -59,15 +54,16 @@
 input[type=text], [type=password]{
 	font-size:20px;
 	padding:5px;
-	margin:10px;
-	border:none;
-	border-bottom:1px solid;
+	margin-top:10px;	 
+	border:1px solid gray;
+ }
+#show{
+	 
 }
-input{type=password}{
-	background:url(Images/eyeon.png) no-repeat right center;
+#eyeon{
+	width:1.6vw;  	 
 }
 input[type=button], #submit{
-    background-color: #eee;  
     border: 1px solid #ddd; 
 	border-radius: 25px;
     color: white; /* Black text color */
@@ -110,16 +106,14 @@ select, #date_info{
    margin:20px 30px;
    font-size:18px;
      }
-	input[type=text]{
-	font-size:14px;
+	input[type=text]{	 
 	padding:5px;
 	margin:10px;	 
 }
 }
  
 @media screen and (max-width:1450px){
-input[type=text]{
-	font-size:14px;
+input[type=text]{	 
 	padding:3px;
 	margin:5px;	 
 } 

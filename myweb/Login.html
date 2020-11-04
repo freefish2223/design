@@ -7,7 +7,10 @@
 <link rel="stylesheet" href="css/index.css" type="text/css" >
 <title>Log in</title>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>	
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> 
+<script src="https://kit.fontawesome.com/yourcode.js"></script>
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+	
 	<script> 
    $(document).ready(function(){
    $("#hamburger").mouseup(function(){
@@ -24,8 +27,20 @@
 		document.getElementsById("#pwd").onclick = function() {
           alert("Hello"); 
               };
-     </script>
-
+		 </script>
+		<script>
+		function eyeon(y) {
+		  y.classList.toggle("fa-eye-slash");
+		  var x = document.getElementById("pwd");		  	 
+		  if (x.type === "password") {
+			x.type = "text";			
+		  } else {
+			x.type = "password";
+		  }
+		 
+		}		
+        </script> 
+	
 </head>
 
 <body>
@@ -39,10 +54,11 @@
 <div id= "login" >
 <form >
 Username<span style="color:red">*</span> <br><br>
-	<input type="text" name="Username" required>
-<br><br> 
+	<input type="text" name="Username" size="20" required>
+<br><br> <br> 
 Password<span style="color:red">*</span> <br><br>
-	<input type="password"  id="pwd" name="pwd" minlength="8" required>  
+	<input type="password"  id="pwd" name="pwd"  size="17" required> 
+	<i id="eye" class="fas fa-eye" onclick="eyeon(this)" ></i> 
 <br><br>
 	 <input type="checkbox" >   
  <label for="Remember me" style="font-size:22px; color:gray;" > Remember me </label> 
