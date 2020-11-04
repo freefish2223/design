@@ -7,6 +7,7 @@
 <link rel="stylesheet" href="css/index.css" type="text/css" >
 <title>Log in</title>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>	
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	<script> 
    $(document).ready(function(){
    $("#hamburger").mouseup(function(){
@@ -19,6 +20,10 @@
         $("#myTopnavdrop").slideUp('slow');
             };
           })
+		
+		document.getElementsById("#pwd").onclick = function() {
+          alert("Hello"); 
+              };
      </script>
 
 </head>
@@ -37,7 +42,7 @@ Username<span style="color:red">*</span> <br><br>
 	<input type="text" name="Username" required>
 <br><br> 
 Password<span style="color:red">*</span> <br><br>
-<input type="text"  id="pwd" name="pwd" minlength="8" required>
+	<input type="password"  id="pwd" name="pwd" minlength="8" required>  
 <br><br>
 	 <input type="checkbox" >   
  <label for="Remember me" style="font-size:22px; color:gray;" > Remember me </label> 
