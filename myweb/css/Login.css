@@ -19,12 +19,15 @@
    }
  
 #booking {
-    width:100%;   
+	position:relative;
+    width:100%;  
+	height:800px;
     margin-top:60px;
     font-size:20px;
 	padding:10px;
 	background-color:#F1EFEF;
-    background-image:url("../Images/lily.jpg" ) ;
+    background-image:url("../Images/lily.jpg"  ) ;
+	 
     -moz-background-size: 100% 100%;  
     -o-background-size: 100% 100%;  
     -webkit-background-size: 100% 100%;  
@@ -36,34 +39,46 @@
 	-moz-box-shadow:0 1px 2px #999;
 	 box-shadow:0 1px 2px #999; */
        }
-#form{
-	margin:10% 20%; 	 
-}
 
  form {
-   margin:0 auto;    
+   width:100%;
+   margin:10% 30%; 
    font-family:Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
    color:#464445;
      }
- 
+#form1{
+	margin:0 auto;
+	 
+}
+label{
+	background:#EFEFEF;
+	padding:14px;
+}
 .form-control{      
      height:50px;
 	 background:#F8EBDD;
 	 padding:5px;
  }     
+#type1{
+	margin: 0px 10px;
+}
 input[type=text], [type=password]{
 	font-size:20px;
 	padding:5px;
 	margin-top:10px;	 
 	border:1px solid gray;
  }
-#show{
-	 
+#eye{
+	background:#E9E9E9;
+	margin-left:-5px;
+	border:1px solid gray;
+	border-left:none;
+	padding:6.5px;
 }
 #eyeon{
 	width:1.6vw;  	 
 }
-input[type=button], #submit{
+input[type=button], #submit, #submit1{
     border: 1px solid #ddd; 
 	border-radius: 25px;
     color: white; /* Black text color */
@@ -72,10 +87,20 @@ input[type=button], #submit{
     pointer:cursor;
     cursor:pointer; 
 	background-color:#B06C09;
+	margin-top:20px;
+}
+#submit1{
+	position:absolute;
+	margin-left:15%;
 }
 select, #date_info{
 	font-size: 20px;
 	color:#4D4B4B;
+}
+#creat{
+	background:white;
+	color:black;
+	border:1px solid gray;
 }
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -87,25 +112,23 @@ select, #date_info{
      height:30px;
  } 
    form {
-   margin:20px 30px;
+   margin:0;
    font-size:20px;
      }
  }
-@media screen and (max-width:868px){
+@media screen and (max-width:908px){
 	 #booking {
-      width:100%;  
-	height:700px;
+     width:100%;  
+	 height:700px;
 	   }
 	form{
 		font-size: 20px;
+		 margin:10% 10%;
 	}
 	.form-control{      
      height:30px;
  } 
-	#form {
-   margin:20px 30px;
-   font-size:18px;
-     }
+	
 	input[type=text]{	 
 	padding:5px;
 	margin:10px;	 
@@ -113,11 +136,6 @@ select, #date_info{
 }
  
 @media screen and (max-width:1450px){
-input[type=text]{	 
-	padding:3px;
-	margin:5px;	 
-} 
-	.form-control{      
-     height:40px;
- } 
+
+
 }
