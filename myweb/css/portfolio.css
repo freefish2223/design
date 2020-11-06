@@ -147,7 +147,9 @@ nav ul li #a2:hover{
     }
 #line{
 	width: 80%;
-	height: 8px;
+	height: 5px;
+	border-radius: 50%;
+	opacity:0.5;
 	background-color: -webkit-linear-gradient(101deg, rgba(7, 7, 183, 0.7686270000000001) 32%, rgba(53, 24, 179, 0.67) 50%, rgba(99, 7, 122, 0.6) 68%);
 	background-image: -moz-linear-gradient(101deg, rgba(7, 7, 183, 0.7686270000000001) 32%, rgba(53, 24, 179, 0.67) 50%, rgba(99, 7, 122, 0.6) 68%);
 	background-image: -o-linear-gradient(101deg, rgba(7, 7, 183, 0.7686270000000001) 32%, rgba(53, 24, 179, 0.67) 50%, rgba(99, 7, 122, 0.6) 68%);
