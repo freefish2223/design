@@ -24,6 +24,10 @@
 	/* background :url("../Images/header-background.png") no-repeat;
 	background-size:100% 100%; */
 	}
+svg{
+	background::url("../Images/web.jpeg")
+}
+
 
   #header svg {
 	position:absolute;
@@ -117,9 +121,9 @@ nav ul li #a2:hover{
 	 }
 #photo{
 	position:absolute;
-	width:300px;
-	right:6%;
-	top:6%;
+	width:400px;	 
+	right:4%;
+	top:8%;
 }
 .content{
 	position:relative;
@@ -266,10 +270,10 @@ li{
 	bottom:100px;
 }
     .align-left {
-	width:450px;
+	width:530px;
 	bottom:100px;
     float: left;
-    margin-left: 100px;
+    margin-left: 150px;
 	margin-top:80px;
     }
 .align-right{
