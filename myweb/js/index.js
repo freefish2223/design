@@ -8,18 +8,12 @@ window.onscroll = function() {myFunction()};
       x.classList.toggle("change");
      }
 
-
    $(document).ready(function(){
-   $("#hamburger").mouseup(function(){
-    $("#myTopnavdrop").slideDown();
+   $("#hamburger").mousedown(function(){
+    $("#myTopnavdrop").slideToggle();
   });
   });
-     $(document).mouseup(function(event){
-        var _con = $("#hamburger");
-        if( !_con.is(event.target)){
-        $("#myTopnavdrop").slideUp('slow');
-            };
-          })
+
  
  var slideIndex = 1;
 showSlides(slideIndex);

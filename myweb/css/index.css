@@ -341,7 +341,7 @@
     .title{	    
 	   margin: 40px 30px 30px 30px;
        font-family:Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
-       font-size:clamp(1.5rem, 3vw, 3rem);
+       font-size:clamp(1.5rem, 3.5vw, 3rem);
 	   text-align: left;
        color:#744705;
       } 	
@@ -418,10 +418,12 @@
    .slideshow-container{margin-left:0;}
       .p1 {
         width:100%; 
-        margin:0 } 	 
+        margin:0;
+	    font-size:10px;} 	 
      }
    #picwords{ padding:15px;
-           border:2px solid; }
+           border:2px solid;
+          }
 .dot{
 	margin-bottom:-25px;
 }
@@ -434,7 +436,7 @@
      .menu {display:none;}
      .dropdown {display:inline-block}
      #signin {display:none;} 
-     .p1 {margin:5px;}   
+         
      .name { 
           font-size:3vw;}
 	.title{margin-top:20px;}
