@@ -3,11 +3,11 @@
 #winter1{
 	margin:0 auto;
 	margin-top:100px;
-	width:400px;
-	height: 300px;
-	background:#87380A;	 
+	width:580px;
+	height: 450px;
+	background:;	 
 	padding:20px;
-	border-radius: 40px;
+	border-radius: 30px;
 	background-image:url("../Images/border.png");
 		-moz-background-size: 100% 100%;  
     -o-background-size: 100% 100%;  
@@ -17,7 +17,11 @@
 }
 #winterspecial{
     text-align:center;
-    margin-top:38px;
-    color:white;
+    margin-top:0px;
+    color:black;
 }
-
+#winterspecial1{
+    text-align:center;
+    margin-top:40px;
+    color:black;
+}

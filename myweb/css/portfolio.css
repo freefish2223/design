@@ -183,7 +183,7 @@ nav ul li #a2:hover{
 	position:absolute;
 	width:500px;
 	right:50px;
-	bottom:30px;
+	bottom:80px;
 	opacity:1;
 	transform: rotate(160deg);
 }
@@ -227,10 +227,10 @@ nav ul li #a2:hover{
 }
 .logo{
 	dsoplay:inline-block;
-	width:60px;
-	height:60px;
+	width:50px;
+	height:50px;
 	margin-left:10px;
-	padding:43px;
+	padding:40px;
 	index:1;
 }
 .logo1{
@@ -254,7 +254,7 @@ li{
 	float:left;
 	font-size: 18px;
     margin-top: 30px;
-	line-height: 85px;
+	line-height: 79px;
 	}
 #footer{
 	position:absolute;
@@ -271,13 +271,13 @@ li{
 }
     .align-left {
 	width:530px;
-	bottom:100px;
+	bottom:150px;
     float: left;
     margin-left: 150px;
-	margin-top:80px;
+	margin-top:20px;
     }
-.align-right{
-	float:right;
+   .align-right{
+	  float:right;
 }
     .slidein {
        opacity: 0; 
