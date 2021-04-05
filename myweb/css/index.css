@@ -6,7 +6,7 @@
       img {vertical-align: middle;}
   
     #winter {
-        background-color:#AB870A;
+        background-color:#73C76F;
         text-align:center;
         font-size:30px;
 		font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
@@ -182,15 +182,14 @@
 .slideshow-container{
 		 clear:both;
          position:relative;
-         width:100%;
-	     
+         width:90%;	     
          margin:0 auto;
          margin-top:50px;         
          overflow:hidden;
-         /*border: 5px solid #fdfdfd;
+         border: 5px solid #fdfdfd;
 		-webkit-box-shadow:0 3px 5px #999;
 		-moz-box-shadow:0 3px 5px #999;
-		 box-shadow:0 3px 5px #999;  */ 
+		 box-shadow:0 3px 5px #999;   
           }
 
 .prev, .next {
@@ -238,7 +237,7 @@
   cursor: pointer;
   height: 15px;
   width: 15px;
-  margin: 0 2px;
+  margin: 30px 3px;
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;

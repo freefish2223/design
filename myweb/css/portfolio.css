@@ -107,13 +107,13 @@ nav ul li a{
 nav ul li #a1{
 	// background-color: #E99A11 ;
 	  padding:3px 10px;
-	  color:white;
+	  color: yellow;
 	  opacity:0.6;
 	 }
 nav ul li #a2{
 	// background-color: #ea410d;
 	padding:3px 10px;  
-	color:white;
+	color:yellow;
 	opacity:0.6;}
 nav ul li #a1:hover{
 	background-color:mediumpurple;
