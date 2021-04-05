@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv=“X-UA-Compatible” content=“chrome=1″ />
+<meta http-equiv=“X-UA-Compatible” content=“IE=10″>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Portfolio</title>
+
+<link rel="stylesheet" href="css/portfolio.css" type="text/css" >
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <div id="body1">
+    <header id="header" >
+     <svg width="100%" height="668" viewBox="0 0 1409 620" preserveAspectRatio="xMidYMin slice" >
+		<path class="st0" d="M1408.5,611.5c-2.04-179.02-2.29-358.02-0.75-537c0.22-25,0.47-50,0.75-75H-0.5c0,113,0,226,0,339
+	c33.33,14.5,92.37,38.81,168,62c369.29,113.24,577.74,29.09,954,117C1185.67,532.49,1286.8,559.99,1408.5,611.5z"/>
+    <defs>
+		<LinearGradient id="header-fill" gradientTransform="rotate(35)">
+		<stop offset="0%" stop-color="rgba(7, 7, 183, 0.768 )"/>
+		<stop offset="61%" stop-color="rgba(53, 24, 179, 0.67)"/>
+		<stop offset="100%" stop-color="rgba(99, 7, 122, 0.6)"/>
+		</LinearGradient>
+	</defs>
+	</svg> 	  
+		<!-- <img class="loader" src="Images/star.png"> -->
+		</header>
+    <div class="title">
+    <p id="name">I Am Jasmine Chen</p>    
+    <p id="title">A Web Developer 
+      </p>
+	// <sapn> <img class="spiner" src="Images/star.png"> </sapn>  
+	  </div>
+      <nav>
+		  <ul>
+			<li><a id="a1" href="Resume.html" >Resume</a></li>
+			<li><a id="a2" href="index.html" target="blank">Sample</a></li>
+		  </ul>
+	  </nav>
+<img id="photo" src="Images/head.png"   alt="portfolio"> 
+	  
+	   <div class="content">
+			<p id="aboutme">About <br> Me</p>
+			<p id="text1">I have a bachelor’s degree in Computer Science, 3 years of experience in web develope, 4 years of experience in graphic design. I have great enthusiasm for web developing. I am proficient in HTML, CSS, Javascript, Jquery, Dreamweaver and Photoshop. Good know  </p>
+         <div id="line"> </div>
+         <p id="phone"> Cell: 732-425-7548</p>
+	   </div >
+	  <div class="content1">
+		  <p id="skills"> <span class='my'>My</span> Skills </p>
+		  <div id="icon">
+		   <ul id="ulogo">
+			 <li class="logo">  <img class="logo1" src=" Images/htmllogo.png">  </li>
+			 <li class="logo">  <img class="logo1" src=" Images/csslogo.png"> </li>
+			 <li class="logo">  <img class="logo1" src=" Images/jslogo.png">  </li>
+			 <li class="logo">  <img class="logo1" src=" Images/jqlogo.png">  </li>
+			 <li class="logo">  <i class="fa fa-wordpress" style="font-size:48px; color:deepskyblue"></i> </li>
+			 <li class="logo"> <img class="logo1" src="Images/MySQL-Logo.png"> </li>
+			 <li class="logo">  <img class="logo1" src=" Images/pslogo.png">  </li>
+			 <li class="logo">  <img class="logo1" src=" Images/dwlogo.png">  </li>			
+			
+			   </ul> 
+			   <p id="lgtext"><b>
+				   HTML5 <br>                                                           
+				   CSS3.0 <br>
+				   Javascript <br>
+				   Jquery <br> 
+				   WordPress <br>
+				   MySql <br>
+				   Adobe Photoshop <br>                                                
+				   Dreamweaver <br>	  
+				  </br>
+               </p>
+		 </div>
+	  </div>
+<div id="footer">
+</div>	
+	   <img src= "Images/webdesignpic.png" style=(width:3vw;") class="align-left slidein">
+ </div>	
+	
+<script>
+
+// 获取所有需要参与动画的图片
+const sliderImages = document.querySelectorAll('.slidein');
+
+function checkSlide(e) {
+ sliderImages.forEach(sliderimage => {
+   const slideAt = window.innerHeight + window.scrollY - sliderimage.height / 2;
+   const imageBottom = sliderimage.offsetTop + sliderimage.height;
+   const isHalfShown = slideAt > sliderimage.offsetTop;
+   const isNotScrolledPast = window.scrollY < imageBottom;
+   if (isHalfShown && isNotScrolledPast) {
+     sliderimage.classList.add('active');
+   } else {
+     sliderimage.classList.remove('active');
+   }
+ });
+}
+// 监听滚动
+window.addEventListener('scroll', checkSlide);
+</script>
+     
+</body>
+</html>
