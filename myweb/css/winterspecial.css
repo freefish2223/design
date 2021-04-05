@@ -4,11 +4,12 @@
 	margin:0 auto;
 	margin-top:100px;
 	width:580px;
-	height: 450px;
-	background:;	 
-	padding:20px;
+	height: 400px;
+	background:#0FA420;	 
+	padding:10px;
+	border: 10px dashed  #C8F8C2;
 	border-radius: 30px;
-	background-image:url("../Images/border.png");
+	//background-image:url("../Images/border.png");
 		-moz-background-size: 100% 100%;  
     -o-background-size: 100% 100%;  
     -webkit-background-size: 100% 100%;  
@@ -17,11 +18,11 @@
 }
 #winterspecial{
     text-align:center;
-    margin-top:0px;
-    color:black;
+    margin-top:-20px;
+    color:#C7F3DF;
 }
 #winterspecial1{
     text-align:center;
-    margin-top:40px;
-    color:black;
+    margin-top:30px;
+    color:#C7F3DF;
 }
