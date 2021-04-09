@@ -25,8 +25,6 @@
     margin-top:60px;
     font-size:20px;
 	padding:10px;
-	background-color:#F1EFEF;
-    background-image:url("../Images/lily.jpg"  ) ;
 	 
     -moz-background-size: 100% 100%;  
     -o-background-size: 100% 100%;  
@@ -43,7 +41,7 @@
  form {
    width:100%;
    margin:10% 30%; 
-   font-family:Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+   font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
    color:#464445;
      }
 #form1{
@@ -52,11 +50,11 @@
 }
 label{
 	background:#EFEFEF;
-	padding:14px;
+	padding:10px;
 }
 .form-control{      
      height:50px;
-	 background:#F8EBDD;
+	 background:#F1F1EEBDD;
 	 padding:5px;
  }     
 #type1{
@@ -81,17 +79,19 @@ input[type=text], [type=password]{
 input[type=button], #submit, #submit1{
     border: 1px solid #ddd; 
 	border-radius: 25px;
-    color: white; /* Black text color */
+    color:#2E2E2E Black text color */
     font-size: 20px; /* Size of text */
     padding: 12px 30px;
     pointer:cursor;
     cursor:pointer; 
-	background-color:#B06C09;
+	background-color:#EFE2C6;
 	margin-top:20px;
 }
 #submit1{
-	position:absolute;
-	margin-left:15%;
+	position:relative;
+ 	font-size: 20px;
+	margin-left:14.9%; 
+	martin:0 auto;
 }
 select, #date_info{
 	font-size: 20px;
