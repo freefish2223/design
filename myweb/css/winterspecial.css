@@ -3,11 +3,11 @@
 #winter1{
 	margin:0 auto;
 	margin-top:100px;
-	width:580px;
-	height: 400px;
-	background:#0FA420;	 
+	width:480px;
+	height: 350px;
+	background:#D4F1E2;	 
 	padding:10px;
-	border: 10px dashed  #C8F8C2;
+	border: 10px dashed  #CFE7B6;
 	border-radius: 30px;
 	//background-image:url("../Images/border.png");
 		-moz-background-size: 100% 100%;  
@@ -16,13 +16,13 @@
     background-size: 100% 100%;  
     background-repeat:no-repeat;  
 }
+ 
 #winterspecial{
-    text-align:center;
-    margin-top:-20px;
-    color:#C7F3DF;
-}
+	text-align:center;
+    margin-top:-40px;
+     	}
 #winterspecial1{
-    text-align:center;
-    margin-top:30px;
-    color:#C7F3DF;
+    text-align:center; 
+	margin-top:30px;
+    color:#333333;
 }
