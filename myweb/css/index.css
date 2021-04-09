@@ -387,10 +387,11 @@
 
     #booking1 a {
        text-decoration:none;
-       color:white;
+       color:#3A3A38;
        }
     #booking1 a:hover{	       
-       font-size:32px;
+       font-size:26px;
+	   color:#2E1E03
     }
     #buttom{
 	  clear:both;
