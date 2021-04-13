@@ -289,14 +289,8 @@
 		  top: 50%;
           left: 50%;
           transform: translate(-50%, -50%);
-		  border: 2px solid #fdfdfd;
-          
-		/*  border: 3px solid #fdfdfd;
-			-webkit-box-shadow:0 3px 5px #999;
-			-moz-box-shadow:0 3px 5px #999;
-			 box-shadow:0 3px 5px #999;
 		  padding:30px 20px;
-		  background-color: rgba(150, 120, 80, 0.3);*/
+		  background-color: rgba(150, 120, 80, 0.7); 
      }
    
 	#serveice{
@@ -305,7 +299,8 @@
 		margin:0 auto;
 		text-align:left;
 		padding:1% 16%;
-		font-size:clamp(1.5rem, 1.9rem,3rem);		 		font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+		font-size:clamp(1.5rem, 1.9rem,3rem);		 		
+		font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
 		margin-top:130px;
 		margin-bottom: -50px;
 		color:#646060;
