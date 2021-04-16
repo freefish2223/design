@@ -23,9 +23,7 @@
 	height:70px;
 }
 #snowflake{
-	position:absolute;
-	width:60px;
-	left:8%;
+	position:absolute; 	
 }
     #winter a {
 	   text-decoration: none; 
