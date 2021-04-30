@@ -65,17 +65,17 @@ svg{
 	font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
 	color: #fafaf8;
 	font-size: 3.2vw;
-	top: 6%;
-	left:10%;
+	top: 5%;
+	left:90px;
 }	
 #title{
 	position:absolute;
 	font-family:Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";
 	color: #EFCC76;
-	font-size: 4.5vw;
+	font-size: 4.2vw;
 	top:10%;
 	float:left;
-	left:10%;}	
+	left:90px;}	
 
 .title p{
 	opacity:0;
@@ -105,25 +105,22 @@ nav ul li a{
 	text-decoration: none;
 	 }
 nav ul li #a1{
-	// background-color: #E99A11 ;
 	  padding:3px 10px;
-	  color: yellow;
+	  border:1px solid;
+	  color:antiquewhite;
 	  opacity:0.6;
 	 }
 nav ul li #a2{
-	// background-color: #ea410d;
-	padding:3px 10px;  
-	color:yellow;
+	border:1px solid;
+	padding:3px 10px;
+	margin-right:25px;
+	color:antiquewhite;
 	opacity:0.6;}
 nav ul li #a1:hover{
 	background-color:mediumpurple;
-	border-radius: 30%;
-	padding:4px 12px;
-	 }
+	}
 nav ul li #a2:hover{
 	background-color:mediumpurple;
-	border-radius: 30%;
-	padding:4px 12px;
 	}
 #photo{
 	position:absolute;
@@ -227,7 +224,7 @@ nav ul li #a2:hover{
 }
 #icon{
 	margin-top:100px;
-	width: 80%;
+	width: 90%;
 	height: 700px;
 	background: url("../Images/iconbg.png");
 	background-size: 100% 100%;
@@ -248,6 +245,7 @@ nav ul li #a2:hover{
  
 #ulogo{
 	width:150px;
+	margin-left:20px;
 	float:left;
 }
 #ulogo li{
@@ -259,6 +257,7 @@ li{
 #lgtext{
 	width:200px;
 	float:left;
+	margin-left:10px;
 	font-size: 18px;
     margin-top: 30px;
 	line-height: 89px;
@@ -280,7 +279,7 @@ li{
 	width:530px;
 	bottom:150px;
     float: left;
-    margin-left: 100px;
+    margin-left: 90px;
 	margin-top:20px;
     }
    .align-right{
@@ -358,7 +357,7 @@ li{
 	}
 	.content, .content1{
 		width:90%;
-	    margin-left:90px;} 
+	    margin-left:180px;} 
 	#line{
 	   display: none;
 	}
