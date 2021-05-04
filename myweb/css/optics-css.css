@@ -5,20 +5,25 @@
     box-sizing: border-box; } 
 img {vertical-align: middle;}
 #header{
-	height:120px;
+	position: -webkit-sticky;
+    position: sticky;
+	top:0;
+	z-index:99;
+	background-color:white;
+	height:110px;
 }
 #logo{
 	width:7rem;
 	length:6.5rem;
 	float:left;
 	margin-left:10%;
-	padding:1.8em 0;
+	padding:1.5em 0;
 	vertical-align: middle;
 }
 #menu{
 	float:right;
-	margin-right:10%;
-	padding:3em 0;	
+ 	margin-right:10%;
+	padding:2.2em 0;	
 	font-size:18px;
 	}
 #menu ul li {
@@ -269,4 +274,13 @@ s}
 }
 #follow{
 	font-size:20px;	 
+}
+#livechat{
+	position:fixed;
+	width:100px;
+	bottom:0;
+	right:0;
+    padding:10px 0;
+	border:2px solid lightgrey;
+	background-color:white;
 }
