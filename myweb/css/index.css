@@ -157,8 +157,7 @@
 		 position:absolute;
          clear:both;
          right:0;
-         width:200px;
-          
+         width:200px;          
          background-color:white; 
          display:none; 
 		 font-size: 20px;
@@ -385,7 +384,7 @@
        }
     #booking1 a:hover{	       
        font-size:26px;
-	   color:#2E1E03
+	   color:#2E1E03;
     }
     #buttom{
 	  clear:both;

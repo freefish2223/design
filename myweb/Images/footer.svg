@@ -1,0 +1,10 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1921 690" width="1921" height="690">
+	<title>Footer</title>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #069191 } 
+	</style>
+	<g id="Footer">
+		<path id="Shape 6" class="shp0" d="M1.57 6.59C1.31 159.91 247.75 158.26 287.31 163.08C387.28 175.25 1707.35 269.35 1779 288.22C1908.94 322.44 1921.01 406 1921 414.22C1920.99 422.44 1920.42 689.62 1920.42 689.62L0.42 686.37C0.42 686.37 1.74 -91.41 1.57 6.59Z" />
+	</g>
+</svg>

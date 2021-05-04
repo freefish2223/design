@@ -1,0 +1,272 @@
+@charset "utf-8";
+/* CSS Document */
+* { margin: 0;
+    padding: 0;
+    box-sizing: border-box; } 
+img {vertical-align: middle;}
+#header{
+	height:120px;
+}
+#logo{
+	width:7rem;
+	length:6.5rem;
+	float:left;
+	margin-left:10%;
+	padding:1.8em 0;
+	vertical-align: middle;
+}
+#menu{
+	float:right;
+	margin-right:10%;
+	padding:3em 0;	
+	font-size:18px;
+	}
+#menu ul li {
+	display: inline-block;
+	padding:0 0 0 30px;	
+}
+#menu a {
+	text-decoration: none;
+	color:#535353;
+}
+#login{
+	background-color:#035487;
+	color:white;
+	padding:8px 15px;
+	border:none;
+	font-size: 17px;
+	border-radius: 10%;
+}
+#login:hover{
+	color:antiquewhite;
+	cursor: pointer;
+}
+.mainpic{
+	position:relative;
+	float:clear;
+	width:100%;
+	height:560px; 	
+	background-image:url("../Images/bodybg.png");
+	background-size:cover;
+}
+.mainpic p{
+	margin-left:10%;
+	font-family:asset;
+	font-weight:bold;
+	color:#0d89b1;
+}
+#hh1{	 
+	font-size:8.3em;
+	padding:.5em 0 0 0;
+}
+#hh2{
+	font-size:7.2em;	 
+}
+#lmbt{
+	background-color:#6ebcbc;
+	font-size:1.2em;
+	color:white;
+	padding:.5em 1.0em;
+	width:160px;
+	border-radius: 15%;
+	border:none;
+	margin-left:10%;
+	margin-top:3em;
+	cursor: pointer;
+	 
+}
+#lmbt{
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+#lmbt:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;  
+  top: 10px;
+  right: -20px;
+  transition: 0.5s;
+}
+
+#lmbt:hover{
+  padding-right: 25px;
+  padding-left:10px;
+}
+
+#lmbt:hover:after {
+  opacity: 1;
+  right:15px;
+}
+.grid1 {
+  width:80%;
+  margin:0 auto;
+  margin-top:150px;
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  grid-gap: 5%;  
+  padding: 10px;
+}
+.grid1 > div {
+  background-color: #09b3c3;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+  border-radius: 10%;
+}
+.icon{
+	position:relative;
+	width:100px;
+	height:100px;	
+	margin:auto;
+	margin-top:50px;
+}
+.icon1{
+	position:relative;
+	width:100px;
+	vertical-align: middle;
+}
+.title1{
+	font-size:2.2em;
+	color:#f9ddb7;
+	font-family: "abril-fatface";
+	margin-top:20px;
+}
+.text1{
+	font-size:20px;
+	color:white;
+	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+	text-align:center;
+	padding:10px 90px 50px 90px;
+}
+.grid2, .grid3{
+  width:80%;
+  margin:0 auto;
+  margin-top:150px;
+  display: grid;
+  grid-template-columns: 47% 47%;
+  grid-gap: 6%;
+  padding: 10px;
+}
+.grid2 > div, .grid3 > div {
+  background-color: #bdf0f1;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px; 
+}
+.grid3{
+	margin-top:20px;
+}
+.humanicon{
+	width:30%;
+	float:left;
+}
+.humanintroduce{
+	width:70%;
+	float:left;
+	padding:10px 30px 10px 10px;
+	font-size:20px;
+	text-align:left;	
+}
+.humanpic{
+	position:relative;
+	width:100px;
+	margin-top:30px;
+	
+}
+.name{
+	margin:20px 0;	 
+	font-style: italic;	
+	color:#3B3A3A;
+}
+.intro{
+	font-size: 18px;
+	color:#6A6666;
+	padding:0 10px 20px 0
+}
+#grid4 {
+	grid-gap: 10px;	
+	margin-top:150px;
+	margin-bottom:-50px;
+}
+#grid4 > div{
+	background-color: white;
+}
+#member1{
+	color:#455454;
+	font-family: "abril-fatface";
+	font-size:60px;
+	font-weight: bolder;
+	padding:20px 0;
+}
+#register{
+	font-size:60px;
+	padding:20px 40px;
+	font-family:Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";
+	font-weight: bolder;
+	background-color:#034b79;
+	color:white;
+	border-radius: 10%;
+	cursor: pointer;
+}
+#register a{
+	color:white;
+	text-decoration: none;
+}
+#register a:hover{
+	color: yellow;
+}
+#footer{
+	width:100%;
+	height:600px;
+	background-image: url("../Images/footer.svg");
+	background-size:cover;
+}
+.flex1{
+  position:relative;
+  display: flex;
+  flex-wrap: wrap;
+  width:80%;
+  font-size: 26px;
+  padding:300px 0 0 0  ;
+  margin:0 auto;
+  text-align: center;
+}
+.flex11{
+  padding: 30px 0;
+  flex: 25%;  
+s}
+#logob{
+	position:relative;
+	width:60px;
+	margin:0 auto;
+}
+#bwords{
+	color:#E3E3E3;
+	font-size:20px;
+	line-height: 32px;
+}
+
+#cell{
+	color:#E5F3DD;
+	font-size:28px;
+	font-weight: bold;
+}
+.blogo{
+	width:30px;
+    margin : 20px;
+}
+#footer a{
+	text-decoration: none;
+}
+#blogo{
+	position:relative;
+	width:80%;
+	text-align: center;
+	margin:0 auto;
+	
+}
+#follow{
+	font-size:20px;	 
+}
