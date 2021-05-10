@@ -1,0 +1,36 @@
+z`s@charset "utf-8";
+/* CSS Document */
+ * { margin: 0;
+      padding: 0;
+      box-sizing: border-box; 
+     } 
+#container{
+	text-align:center;
+	margin-top:50px;
+	width:100%;
+	height:300px;
+ 
+	backgrond-size:cover;
+}
+svg{
+	animation: dots-move 2s alternate-reverse infinite ;
+}
+@keyframes dots-move{
+	from{
+		transform: translateX(2);
+	}
+   to{
+		transform: translateX(-20px);
+	}
+}	
+svg .shp2:hover{
+	fill:red;
+}
+svg .shp1{
+	animation: color-change 2s alternate-reverse infinite ;
+}
+@keyframes color-change {
+    0%{fill:#ff0000}
+    50%{fill:yellow}
+    100%{fill: #ff0000}
+}

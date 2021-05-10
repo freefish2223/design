@@ -8,6 +8,7 @@
 </head>
 
 <body>
+	
 <div id="header"> 
 	<img id="logo" src="Images/optics-Logo.png">
 	<div id="menu"	>
@@ -142,6 +143,22 @@
 	 
 		<img id="livechat" src="Images/livechat.jpg">
 	 
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("header");		
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+   navbar.classList.remove("sticky");
+  }
+	
+}
+	
+	</script>
 </body>
 	
 </html>
