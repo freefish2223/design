@@ -6,7 +6,7 @@
       img {vertical-align: middle;}
   
     #winter {
-        background-color:#D4F1E2;
+        background-color:#F3D9CE;
         text-align:center;
         font-size:30px;
 		font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
@@ -37,9 +37,9 @@
 	  position:relative;
       height:90px;
       background:white;     		
-	  -webkit-box-shadow:0 1px 2px #999;
+	/*  -webkit-box-shadow:0 1px 2px #999;
 	-moz-box-shadow:0 1px 2px #999;
-	 box-shadow:0 1px 2px #999;  
+	 box-shadow:0 1px 2px #999;  */
        }
  
   .homedropdown {
@@ -69,7 +69,7 @@
  
     .menu { 
 	    float:right; 
-        margin-top:18px;
+        margin-top:-30px;
         font-size:18px; 
         word-spacing:3px;
 		       }   
@@ -90,14 +90,14 @@
      	}
     #signin{             
             font-size:15px; 
-            padding:6px ; 
-		    background:#B06C09;
+            padding:6px 12PX; 
+		    background:#462105 ;
 		    float:right;
 		    text-align: center;
             margin:13px ;
 		    width:60px;
 		    border: 0px solid white;
-            border-radius: 6px;
+            border-radius: 0px;
             } 
     #signin a{text-decoration: none; 
               color:white;
@@ -107,17 +107,20 @@
         color:#F4D21E;
         }
    
-     .name { float:left;
+     .name { 
+		    float:left;
             font-size:25px;
             font-family:"Georgia";
             color:#cb3b3b;
             text-shadow: 0 0 0.2em #cabbe9, 0 0 0.2em #cabbe9 ;
             margin-top :10px;
-            margin-left:10px;}
-     #main { width:100%;
+            margin-left:10px;
+       }
+     #main {
+		    width:100%;
             height:auto;
-            margin-top:-20px;             
-           }
+            margin-top:-20px;
+		              }
      
     .dropdown{
            clear:both;
@@ -156,32 +159,37 @@
  .menudropdown {
 		 position:absolute;
          clear:both;
-         right:0;
-         width:200px;          
+         right:-5px;
+         width:300px ;  
+	     display:none;
          background-color:white; 
-         display:none; 
+         font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";  
 		 font-size: 20px;
 	     z-index: 999;
-		 box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		// box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
         }
  .menudropdown a {
 		  text-decoration: none; 
-          padding:10px 30px;          	      
+          padding:15px 30px;          	      
 		  color:#111;         
 	      display:block;
 	           }
  .menudropdown a:hover {
-       background-color: #f5f5f5;
-	   background-size:140px 20px;
+       background-color:#C8A590;
+	   background-size: 260px;
 	   color: black;
+	   display:block;
       }
-
+.smallfull{
+	width:100%;
+	display:none;
+}
 .slideshow-container{
 		 clear:both;
          position:relative;
-         width:90%;	     
+         width:100%;    
          margin:0 auto;
-         margin-top:50px;         
+         margin-top:20px;         
          overflow:hidden;
        /*  border: 5px solid #fdfdfd;
 		-webkit-box-shadow:0 3px 5px #999;
@@ -286,8 +294,9 @@
 		  top: 50%;
           left: 50%;
           transform: translate(-50%, -50%);
-		  padding:30px 20px;
-		  background-color: rgba(150, 120, 80, 0.7); 
+		  padding:40px 80px;
+		  line-height: 5vw;
+		  background-color: rgba(0, 0, 0, 0.4); 
      }
    
 	#serveice{
@@ -314,12 +323,13 @@
 	  margin:0 auto;
 	  margin-top:200px;
 }
-.grid-item , .grid-item1{
-  position:relative;
-  text-align: center;
- }
-  
-	 
+	.grid-item , .grid-item1{
+	  position:relative;
+	  text-align: center;
+	 }
+	#responsetext{
+	  display:none;
+	}
    .p1 {	   
 	    text-align: center;
 	    line-height:140%;
@@ -331,7 +341,7 @@
     .title{	    
 	   margin: 30px 60px;
        font-family:Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
-       font-size:3.5vw;
+       font-size:3.5rem;
 	   text-align: center;
        color:#744705;
       } 	
@@ -365,59 +375,75 @@
    #lmbutton{
 	    position:relative;	
 	    margin:30px 0;
-	   	font-size:20px;
-		color:#808080;
-		 
-	    padding:3px 8px;
+	   	font-size:18px;
+		color:black;
+	    background-color:white;
+	    padding:5px 10px;
+	    border:.5px solid  grey;
+	    cursor:pointer;
+	    -webkit-transition: color 1s;
+		-moz-transition:    color 1s;
+		-ms-transition:     color 1s;
+		-o-transition:      color 1s;
+		transition:         color 1s;	   
 	}
- 
+#lmbutton:hover{
+	background-color:lightgrey;
+}
+#booking{
+    width:200px;
+	margin:auto;
+}
     #booking1 {
-      width:150px;
-      height:50px;
-      border:1px solid #D3CDCD;
-      border-radius:28px;
+	  width:200px;
+      height:60px;         
 	  color:#151D1D;
-	  margin-left:45%;
       text-align:center;
       padding:9px;
-      background:#EFE2C6 ;	   
-      font-size:25px;
-		
+      background-color:#3E1601;	   
+      font-size:30px;
+      font-weight:bold;
+	  font-family:Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+	  margin-top:120px;
+	-webkit-transition: background-color 1s;
+    -moz-transition:    background-color 1s;
+    -ms-transition:     background-color 1s;
+    -o-transition:      background-color 1s;
+    transition:         background-color 1s;
     }
 
     #booking1 a {
        text-decoration:none;
-       color:#3A3A38;
+       color:white;
+	 -webkit-transition: color 1s;
+    -moz-transition:     color 1s;
+    -ms-transition:      color 1s;
+    -o-transition:       color 1s;
+    transition:          color 1s;
        }
-    #booking1 a:hover{	       
-       font-size:26px;
-	   color:#2E1E03;
-    }
+    #booking1:hover{       
+	   background-color:#B57803;	    
+      }
+	#booking1 a:hover{
+		color:white;
+	}
     #buttom{
 	  clear:both;
       width:100%;
 	  display: flex;
       height:300px;
-      background:#F7F2E6;
+      background-color:#D0D0D0;
       margin-top:150px;
       text-align: center;
-	  	}
+	  	s}
     .buttontext{
 	  font-size:14px;
 	  line-height:30px;
       margin:12px;
       font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
-      color:#5B5959y;
+      color:white;
       }
-    #bt1, #bt2{
-		padding:50px;
-		width:15%;
-		margin-left:10%;
-		font-size-14px;
-		font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
-		text-align:left;
-		line-height: 25px;
-	}
+  
     .blogo {
         width:30px;
         height:30px;
@@ -426,13 +452,19 @@
 		border-radius: 20%;
 		margin-top:20px;
 	  }
-    #buttom a{
+    #lmbutton a{
 	 text-decoration: none;
     }
-    
+#bt1, #bt2{
+	margin:0 auto;
+	padding:30px 150px;
+	font-size:18px;
+	line-height: 1.5;
+	margin-top:50px;
+}
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 @media screen and (max-width:576px){
-    #bodydiv,.slideshow-container, #bodydiv1, #bodydiv11{
+    #bodydiv,.slideshow-container{
            width:100%; 
         }
    .slideshow-container{margin-left:0;}
@@ -441,32 +473,41 @@
         margin:0;
 	    font-size:10px;} 	 
      }
-   #picwords{ padding:15px;
-                      }
-.dot{
-	margin-bottom:-25px;
-}
+   #picwords{ 
+	   padding:15px;
+    }
+	.dot{
+		margin-bottom:-25px;
+	}
 @media screen and (max-width:768px){
-   
-	  .slideshow-container{margin-left:0;}
+	#responsetext{
+		display:block;
+	}
+	#responsetext1{
+		display:none;
+	}
+	 .slideshow-container{margin-left:0;}
      .menu {display:none;}
      .dropdown {display:inline-block}
-     #signin {display:none;} 
-         
+     #signin {display:none;}          
      .name { 
-          font-size:3vw;}
-	 .title{margin-top:20px;
-	      	font-size:6vw;
-	}
+             font-size:3vw;}
+	 .title{
+		    margin-top:20px;
+	      	font-size:45px;
+	        }
  	#serveice, #booking1{margin-top:60px}
+	#booking{
+    width:140px;
+	margin:auto;
+}
 	#booking1 {
-      width:130px;
-	  height:40px;
-      font-size:19px;
-	  padding:9px;
+        width:140px;
+		font-size:20px;
+		height:45px;	
     }
 	#booking1 a:hover{
-	  font-size:21px;
+	  font-size:20px;
 	}
 	#bt1, #bt2{
 		padding:20px 40px;
@@ -480,8 +521,17 @@
 	.body-grid {		 
 	  display: grid;
 	  gap: 20px;
-		 grid-template-columns: 1fr ;
-	   
+	  grid-template-columns: 1fr ;
+	  margin-top:70px;
+	   	}
+	.slideshow-container{
+		display:none;
+	}
+	.smallfull{
+		display:block;
+	}
+	#picwords{
+		font-size:32px;	   
 	}
      }
 
@@ -495,12 +545,23 @@
 	    }   
 	.title{
 		margin-top:30px;
-	    font-size:6vw;
-	}
+		font-size:45px;
+	 }
     h3{
 		margin-top: 130px;
 	}
-	 
     }   
-@media screen and (max-width:1200px){}
-
+@media screen and (max-width:1200px){
+	.body-grid{
+	 width:100%;}
+	.p1{
+	 font-size:17px;
+		}
+	.facialpic{
+		width:92%;
+	}
+	.facialpic1:after{
+		width:90%;
+		height:100%;
+	}
+     }

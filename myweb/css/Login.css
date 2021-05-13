@@ -56,6 +56,9 @@ label{
 .b1{
 	margin-left:45%; 
 }
+#submit1{
+	margin:0 auto;
+}
 input[type=text], [type=password]{
 	font-size:20px;
 	padding:5px;
