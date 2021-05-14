@@ -15,13 +15,7 @@
         color:white;
         letter-spacing:6px;
       }    
-#meltsnow{
-	 position:absolute;
-	top:0px;
-	left:0px;
-	width:100%;
-	height:70px;
-}
+ 
 #snowflake{
 	position:absolute; 	
 }
@@ -29,17 +23,27 @@
 	   text-decoration: none; 
        color:white; 
 	    }
+#promotion{
+	 font-size:30px; 
+	 color:#C16E1C; 
+	 vertical-align:middle ;
+}
+#promotion span{
+	font-family:Consolas, 'Andale Mono', 'Lucida Console', 'Lucida Sans Typewriter', Monaco, 'Courier New', 'monospace'; font-size:60px; 
+	color:color:antiquewhite; 
+	vertical-align: middle ;
+}
     #Navdiv{
 	  margin:0 auto; 
 	  margin-top:10px;
       width:100%; 
 	  padding:20px 10px;
 	  position:relative;
-      height:90px;
+      height:100px;
       background:white;     		
-	/*  -webkit-box-shadow:0 1px 2px #999;
+	  -webkit-box-shadow:0 1px 2px #999;
 	-moz-box-shadow:0 1px 2px #999;
-	 box-shadow:0 1px 2px #999;  */
+	 box-shadow:0 1px 2px #999;  
        }
  
   .homedropdown {
@@ -435,7 +439,7 @@
       background-color:#D0D0D0;
       margin-top:150px;
       text-align: center;
-	  	s}
+	  	}
     .buttontext{
 	  font-size:14px;
 	  line-height:30px;
@@ -452,15 +456,27 @@
 		border-radius: 20%;
 		margin-top:20px;
 	  }
+ .blogo1 {
+        width:25px;
+        height:25px;
+	    background-color:#D0D0D0;
+		padding:2px;
+		border-radius: 20%;
+		margin-top:20px;
+	  }
     #lmbutton a{
 	 text-decoration: none;
     }
 #bt1, #bt2{
 	margin:0 auto;
-	padding:30px 150px;
+	padding: 10px  ;
 	font-size:18px;
 	line-height: 1.5;
 	margin-top:50px;
+}
+#logo1{
+	width:150px; 
+	margin-left:-15px;
 }
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 @media screen and (max-width:576px){
@@ -509,15 +525,7 @@
 	#booking1 a:hover{
 	  font-size:20px;
 	}
-	#bt1, #bt2{
-		padding:20px 40px;
-		width:10%;
-		margin-left:2%;
-		font-size:14px;
-		font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
-		text-align:left;
-		line-height: 25px;
-	}
+	
 	.body-grid {		 
 	  display: grid;
 	  gap: 20px;
@@ -532,6 +540,29 @@
 	}
 	#picwords{
 		font-size:32px;	   
+	}
+	.facialpic{
+		width:80%;
+	}
+	#bt1, #bt2{
+    margin:0 auto;
+    padding: 10px 0;
+	font-size:15px;
+	line-height: 1.2;
+	margin-top:40px;
+}
+	#logo1{
+	width:110px;
+	}
+	#buttom{
+		height:200px;
+	}
+	#promotion{
+		font-size:25px;
+		margin-top:-10px;
+	}
+	#promotion span{
+		font-size:45px;
 	}
      }
 
