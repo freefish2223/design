@@ -103,66 +103,57 @@ $(document).ready(function(){
   </div> 
  </div>  
 	  </div>
-  <div id="booking">
-     <form   action=" ">
    
-  <input type="text" class="form-control"  name="fname" placeholder="First Name" size="26.5"  required > 
-  <input type="text" class="form-control" id="type1 name="fname" placeholder="Last Name" size="26.5" required ><br> 
-   
-   <br><br>
-
-    <label class="label" for="select">Please Select</label>
-    <select name="type1" id="type1" class="form-control" required >
-    <option value="facial">facial</option>
-    <option value="massage">massage</option>
-    <option value="body">body</option>
-   </select>   
-  <select name="type1" id="type1" class="form-control" required >
-    <option value="1 person">facial</option>
-    <option value="2 person">massage</option>
-    <option value="3 person">body</option>
-   </select>  
-  <input type="date" name="bday"  id="date_info" class="form-control" required  ><br><br>
-
-  <label class="label" for="select">Please Select</label>
-    <select name="type1" id="type1" class="form-control" required>
-    <option value="facial">facial</option>
-    <option value="massage">massage</option>
-    <option value="body">body</option>
-   </select>  
- <select name="type1" id="type1" class="form-control" required >
-    <option value="1 person">facial</option>
-    <option value="2 person">massage</option>
-    <option value="3 person">body</option>
-   </select>  
-  <input type="date" name="bday"  id="date_info" class="form-control" required  ><br><br>
-
-  <label class="label" for="select">Please Select</label>
-    <select name="type2" id="type1" class="form-control" required>
-    <option value="facial">facial</option>
-    <option value="massage">massage</option>
-    <option value="body">body</option>
-   </select>
- <select name="type1" id="type1" class="form-control" required >
-    <option value="1 person">facial</option>
-    <option value="2 person">massage</option>
-    <option value="3 person">body</option>
-   </select>  
- 
-  <input type="date" name="bday"  id="date_info" class="form-control" required> 
-
- </form>
+<div class="bookpic">
+<div id="bookarea">
+  <div class="bookarea">
+    <form>
+  <label for="fname">First Name</label>
+  <input type="text" id="fname" name="fname"><br>
+  <label for="lname">Item1</label><br>
+	<select name="facial" >
+	  <option value="Be Clear Facial">Be Clear Facia</option>
+	  <option value="Massage">Massage</option>
+	  <option value="Microneedling">Microneedling</option>
+	  <option value="Age Antioxident">Age Antioxident</option>
+	  <option value="Nail treatment">Nail treatment</option>
+	  <option value="Nail treatment">Body treatment</option>  
+	</select>
+</form>
 </div>
-
-<div id="submit1">
-<input type="submit" class="b1" id="submit2" >
+<div class="bookarea1">
+  <form>
+  <label for="fname">Last Name</label>
+  <input type="text" id="fname" name="fname"><br>
+  <label for="lname">Item2</label>
+  <select name="facial" >
+	  <option value="Be Clear Facial">Be Clear Facia</option>
+	  <option value="Massage">Massage</option>
+	  <option value="Microneedling">Microneedling</option>
+	  <option value="Age Antioxident">Age Antioxident</option>
+	  <option value="Nail treatment">Nail treatment</option>
+	  <option value="Nail treatment">Body treatment</option>  
+	</select>
+</form>
 </div>
-
- <div id="buttom">
- <br>
- <br><br>
-	
-<div id = "bt1"> 
+<div class="bookarea2">
+    <form>
+  <label id="date">Date</label><br>
+  <input type="date" id="fname" name="fname"><br>
+  <label for="lname">Adults</label>
+  <select name="facial" >
+	  <option value="1">1</option>
+	  <option value="2">2</option>
+	  <option value="3">3</option>
+</select>
+</form>
+</div>
+<div class="bookarea2" style="width:30%;">
+  <img id="subt" src="Images/submit-button.png">
+</div>
+</div>
+<div id="buttom">
+ <div id = "bt1"> 
 	<img id="logo1"   src="Images/logo.png" ><br><br>
 	<p>  333 Xlajdd Rd, NY <br> Phone: 7584212532 </p>
 	<div id="buttomlogo">
@@ -188,7 +179,6 @@ $(document).ready(function(){
 	<p> More Info</p>
 	<p> Business </p>
 	</div>
-
 	
 </div>
 
