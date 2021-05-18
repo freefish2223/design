@@ -56,6 +56,10 @@
 	position:relative;
 	top:45px;
     left:-30px;
+	cursor:pointer;
+}
+#subt:hover{
+	width:95px;
 }
 label{
 	font-size:18px;	
