@@ -6,7 +6,7 @@
       img {vertical-align: middle;}
   
     #winter {
-        background-color:#FCF5DE;
+        background-color:#704405;
         text-align:center;
         font-size:30px;
 		font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
@@ -25,8 +25,8 @@
 	    }
 #promotion{
 	 font-size:30px; 
-	 color:#C16E1C; 
-	 vertical-align:middle ;
+	 color:white; 
+	 vertical-align:middle;
 }
 #promotion span{
 	font-family:Consolas, 'Andale Mono', 'Lucida Console', 'Lucida Sans Typewriter', Monaco, 'Courier New', 'monospace'; font-size:60px; 
@@ -185,6 +185,7 @@
 	   display:block;
       }
 .smallfull{
+	position:relative;
 	width:100%;
 	display:none;
 }
@@ -288,21 +289,41 @@
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
 }
-       
+#picworddiv{
+	position:absolute;
+	top:0;
+	left:10%;
+	height:100%;
+	width:25%;
+	background-color: rgba(0, 0, 0, 0.4); 
+}
     #picwords{	
 	      position:absolute;
-		  font-size:3.5vw;
+		  font-size:3.2vw;
 		  font-family:Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
 		  color:#F4F3F3;
 		  text-align:center;
+		  top:12%;
+		/*   top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%); */
+		  padding:80px 60px;
+		  line-height:4vw;
+		  
+     }
+   #picwordsmall{	
+	      position:absolute;
+		  font-size:5vw;
+		  font-family:Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+		  color:#F4F3F3;
+		  text-align:center;		   
 		  top: 50%;
           left: 50%;
-          transform: translate(-50%, -50%);
-		  padding:40px 80px;
-		  line-height: 5vw;
-		  background-color: rgba(0, 0, 0, 0.4); 
+          transform: translate(-50%, -50%); 
+		  padding:30px 50px;
+		  line-height:6vw;
+		  background-color: rgba(0, 0, 0, 0.4);
      }
-   
 	#serveice{
 		clear:both;
 		position:relative;
