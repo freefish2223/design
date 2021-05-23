@@ -122,12 +122,37 @@ select, #date_info{
 	border:1px solid gray;
 	font-size:18px;
 }
-
+.information{
+	font-size:20px;
+	width:80%;
+	margin:0 auto;
+	padding:100px;
+	line-height: 30px 
+	}
+.information li{
+	font-size:26px;
+	font-weight:bold;
+	line-height: 50px 
+}
+#background1{
+	width:100%;
+	height:500px;
+	background-image:url("../Images/background1.jpg");
+	background-attachment: fixed;
+	background-size:cover;
+}
+#cov19{
+	width:80%;
+	font-size:20px;
+	line-height: 30px;
+	padding:100px;
+	margin:0 auto;
+}
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 @media screen and (max-width:768px){
  
  }
-@media screen and (max-width:908px){
+@media screenand (max-width:908px){
  	#bookarea{
 		width:100%;
 		margin-left:0px;
