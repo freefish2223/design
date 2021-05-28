@@ -94,12 +94,12 @@
      	}
     #signin{             
             font-size:15px; 
-            padding:6px 12PX; 
-		    background:#462105 ;
+            padding:8px 15PX; 
+		    background:darkgreen;
 		    float:right;
 		    text-align: center;
             margin:13px ;
-		    width:60px;
+		    width:66px;
 		    border: 0px solid white;
             border-radius: 0px;
             } 
@@ -399,7 +399,7 @@
        font-family:Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
        font-size:3.5rem;
 	   text-align: center;
-       color:#744705;
+       color: grey;
       } 	
   .facialpic{
 	  position:relative;
