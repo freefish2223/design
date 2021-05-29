@@ -1,0 +1,156 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../myweb/css/index.css" type="text/css" >
+<link rel="stylesheet" href="../myweb/css/facialproduct.css" type="text/css" >
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/index.js"></script> 
+</head>
+
+<body>
+<!-- <div id="winter" style="height:130px"> 
+  <a href=" " target="_blank" > 
+  <p id="promotion"> Spring Special UP TO <span>50%</span> OFF </p> </a>
+     
+</div>  -->
+
+  <div id="Navdiv1">
+    <div id="logo1">  
+    <a href="../myweb/index.html"><img id="logo1" src="../myweb/Images/beautylogo.jpg" alt="Logo"  aria-> </a>
+		</div> 
+	  <div class="socialmedia">
+    <a href="https://en-gb.facebook.com/login/"> <img class="blogo" src="../myweb/Images/Facebook.png" alt=""/>  </a> &nbsp 
+ <a href="https://twitter.com/login/" target="blank"> <img class="blogo" src="../myweb/Images/Twitter.png" alt=""/></a>&nbsp  <a href="https://www.pinterest.com/" target="blank" > <img class="blogo" src="../myweb/Images/Pinterest.png" alt="" /> </a>
+		  </div>
+     <div class="menu1"  >
+
+
+    <nav id="menu1" >
+     <a  href="../myweb/index.html">Home</a>
+	 <div class="homedropdown">
+     <a  href=" ">Product</a>
+     <div class="dropdown-content">
+     <a href="Facialproduct.html">Facial</a>
+     <a href="#">Massage</a>
+     <a href="#">Body</a>
+     </div>
+     </div>
+      
+    <a href="../myweb/Booknow.html">Booknow</a>  
+    <a href="">Gallery</a> 
+    <a href="">Contact</a>  
+	<a href="../myweb/winterspecial.html">Coupon</a>  
+		<a href="../myweb/winterspecial.html">Login</a> 
+    </nav>
+     </div> 
+  
+  <div class="dropdown">
+   <!-- <img src="../myweb/Images/menu.png" id="hamburger"  style="width:20px; height:20px" alt="">  -->
+	  
+ <div id="hamburger" onclick="myFunction( )">
+  <div class="bar1"></div>
+  <div class="bar2"></div>
+  <div class="bar3"></div>
+    </div>
+     
+  <div class="menudropdown" id="myTopnavdrop">
+    <a href="../myweb/index.html">Home</a>  
+    <a href=" ">Facial</a>  
+    <a href=" ">Massage</a>   
+    <a href=" ">Body</a>   
+    <a href="../myweb/Booknow.html">Booknow</a>  
+    <a href=" ">About Us</a>   
+    <a href=" ">Contact</a>    
+    <a href="../myweb/Login.html">Login</a>  
+  </div> 
+ </div>  
+ </div>
+	
+<div class="slideshow-container">
+<div class="mySlides fade">
+  <div class="numbertext">1 /6</div>
+  <img src="Images/beauty1.jpg" style="width:100% ">   
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 6</div>
+  <img src="Images/beauty2.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 6</div>
+  <img src="Images/beauty3.jpg" style="width:100%">
+  </div>
+	
+ 
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+	
+<div id="dot">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+ 
+</div>
+<!--	<div id="picworddiv">
+<p id="picwords"> Your journey begins here...<br><br>
+	   Experience the difference </p>
+</div> -->
+</div>	
+
+	
+	
+	
+	
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js" integrity="sha512-f5HTYZYTDZelxS7LEQYv8ppMHTZ6JJWglzeQmr0CVTS70vJgaJiIO15ALqI7bhsracojbXkezUIL+35UXwwGrQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  clearInterval(myTimer);
+  if (n < 0){
+    showSlides(slideIndex -= 1);
+  } else {
+   showSlides(slideIndex += 1); 
+  }
+  if (n === -1){
+    myTimer = setInterval(function(){plusSlides(n + 2)}, 4000);
+  } else {
+    myTimer = setInterval(function(){plusSlides(n + 1)}, 4000);
+  }
+}
+
+function currentSlide(n){
+  clearInterval(myTimer);
+  myTimer = setInterval(function(){plusSlides(n + 1)}, 4000);
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n){
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+	window.addEventListener("load",function() {
+    showSlides(slideIndex);
+    myTimer = setInterval(function(){plusSlides(1)}, 4000);
+})
+</script>
+</body>
+</html>

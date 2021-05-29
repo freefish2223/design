@@ -193,8 +193,7 @@
 		 clear:both;
          position:relative;
          width:100%;    
-         margin:0 auto;
-         margin-top:20px;         
+         margin:0 auto;                 
          overflow:hidden;
        /*  border: 5px solid #fdfdfd;
 		-webkit-box-shadow:0 3px 5px #999;
@@ -456,12 +455,13 @@
 	  color:#151D1D;
       text-align:center;
       padding:9px 12px;
-      background-color:#3E1601;	   
+      background-color:#1E6A04;	   
       font-size:30px;
       font-weight:bold;
 	  font-family:Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
 	  margin-top:120px;
-	  border-radius:30px;;
+		border:none;
+	  border-radius:30px;
 	-webkit-transition: background-color 1s;
     -moz-transition:    background-color 1s;
     -ms-transition:     background-color 1s;
@@ -479,7 +479,7 @@
     transition:          color 1s;
        }
     #booking1:hover{       
-	   background-color:#B57803;	    
+	   background-color:#41B00C;	    
       }
 	#booking1 a:hover{
 		color:white;
