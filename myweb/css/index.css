@@ -410,8 +410,8 @@
 	  }
 
 .flippic{
-	position:relative;
-   width:100%;
+  position:relative;
+  width:100%;
   text-align: center;
   transition: transform 1s;
   transform-style: preserve-3d;
@@ -607,8 +607,11 @@
 	  display: grid;
 	  gap: 20px;
 	  grid-template-columns: 1fr ;
-	  margin-top:70px;
+	  margin-top:20px;
 	   	}
+	.facialpic1, .facialpic2{
+		position:relative;
+	}
 	.slideshow-container{
 		display:none;
 	}
@@ -618,8 +621,8 @@
 	#picwords{
 		font-size:32px;	   
 	}
-	.facialpic{
-		width:80%;
+	.flippic{
+		width:100%;
 	}
 	#bt1, #bt2{
     margin:0 auto;
