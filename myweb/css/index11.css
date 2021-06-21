@@ -70,10 +70,7 @@
 .homedropdown:hover .dropdown-content {
   display: block;
 }
- nav a.active, .navmenu:hover {
-  background-color:#484D45;
-  color: white;
-}
+ 
     .menu { 
 	    float:right; 
         margin-top:-30px;
@@ -82,9 +79,11 @@
 		       }   
     .menu a{text-decoration: none; 
             color:#575757;
-            padding: 10px 20px;
+            padding: 10px 10px;
              }
-    
+    .menu a:hover {
+       background-color: #f5f5f5;        
+      }
      
     #logo{
   	    display: inline-block;
@@ -418,24 +417,7 @@
   transform-style: preserve-3d;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
-.pic{
-	position:relative;
-}
-.facialpicture1, .facialpicture2{
-	position:absolute;
-	width:100%;
-	display:block; 	  
-	margin:0 auto;
-}
-.facialpicture2{
-	left:0;
-	width:100%;
-	opacity: 0;
-    transition: .5s ease;
-}
- .facialpicture2:hover{
-	 opacity: 1;
-}
+
   /*   .facialpic1:after {
 	  content: " ";
 	  position: absolute;
@@ -631,20 +613,18 @@
 	  grid-template-columns: 1fr;
 	  margin-top:50px;
 	   	}
-	.facialpicture1, .facialpicture2{
+	.facialpic1, .facialpic2{
 		position:relative;
 	}
-	.facialpicture2{
+	.facialpic2 {
 		display:none;
-	}
-	.grid-item1:hover  .facialpicture1{
+}
+	.grid-item1:hover  .facialpic2{
+  		display:block;
+}
+	.grid-item1:hover  .facialpic1{
   		display:none;
 	}
-	.grid-item1:hover  .facialpicture2{
-  		display:block;
-		opacity:1;
-}
-
 	.slideshow-container{
 		display:none;
 	}

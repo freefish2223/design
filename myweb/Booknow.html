@@ -7,7 +7,8 @@
 <title>Booknow</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
- 
+ <script type="text/javascript" src="js/index.js"></script> 
+
 <script > 
    $(document).ready(function(){
    $("#hamburger").click(function(){
@@ -15,7 +16,11 @@
   });
   });
  </script>
-
+ <script>
+$(document).on('click','nav a',function(){
+	$(this).addClass('active').siblings().removeClass('active')
+})
+</script>
 <script>
 $(document).ready(function(){
    
@@ -27,15 +32,15 @@ $(document).ready(function(){
 </script>
 
 <script>
-    $(document).ready(function () {
-        var time = new Date();
-        var day = ("0" + time.getDate()).slice(-2);
-        var month = ("0" + (time.getMonth() + 1)).slice(-2);
-        var today = time.getFullYear() + "-" + (month) + "-" + (day);
-        $('#date_info').val(today);
+    $(document).ready(function () {
+        var time = new Date();
+        var day = ("0" + time.getDate()).slice(-2);
+        var month = ("0" + (time.getMonth() + 1)).slice(-2);
+        var today = time.getFullYear() + "-" + (month) + "-" + (day);
+        $('#date_info').val(today);
         document.getElementById("date_info").setAttribute("min", today);
         
-    })
+    })
 </script>
 
 </head>
@@ -65,20 +70,20 @@ $(document).ready(function(){
  <a href="https://en-gb.facebook.com/login/" target="blank"> <img class="blogo" src="../myweb/Images/Facebook.png" alt=""/>  </a>  
  <a href="https://twitter.com/login/" target="blank" > <img class="blogo" src="../myweb/Images/Twitter.png" alt=""  /></a> <a href="https://www.pinterest.com/" target="blank" > <img class="blogo" src="../myweb/Images/Pinterest.png" alt="" /> </a>
 <br><br>
-    <nav >
-     <a  href="../myweb/index.html">Home</a>
-	 <div class="homedropdown">
-     <a  href=" ">Service</a>
+    <nav id="nav1" >
+     <a class="navmenu" href="../myweb/index.html">Home</a>
+	 <div class="homedropdown" >
+     <a  class="navmenu " href="#">Product</a>
      <div class="dropdown-content">
-     <a href="#">Facial</a>
+     <a href="Facialproduct.html">Facial</a>
      <a href="#">Massage</a>
      <a href="#">Body</a>
      </div>
-     </div>
-    <a href="../myweb/Booknow.html">Booknow</a>  
-    <a href="">Gallery</a> 
-    <a href="">Contact</a>  
-	<a href="../myweb/winterspecial.html">Coupon</a> 
+     </div>      
+    <a class="navmenu active" href="../myweb/Booknow.html">Booknow</a>  
+    <a class="navmenu" href="#">Gallery</a> 
+    <a class="navmenu" href="#">Contact</a>  
+	<a class="navmenu" href="../myweb/winterspecial.html">Coupon</a>  
     </nav>
      </div> 
   
