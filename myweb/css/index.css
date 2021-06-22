@@ -6,12 +6,13 @@
       img {vertical-align: middle;}
   
     #winter {
-        background-color:#C6D8CB ;
+        background-color:#105702;
+		height:50px;
         text-align:center;
-        font-size:30px;
+        font-size:20px;
 		font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
 		padding:10px;
-		padding-top:30px;
+		padding-top:5px;
         color:white;
         letter-spacing:6px;
       }    
@@ -24,12 +25,11 @@
        color:white; 
 	    }
 #promotion{
-	 font-size:30px; 
-	 color:#352003; 
+	 font-size:20px;	 
 	 vertical-align:middle;
 }
 #promotion span{
-	font-family:Consolas, 'Andale Mono', 'Lucida Console', 'Lucida Sans Typewriter', Monaco, 'Courier New', 'monospace'; font-size:60px; 
+	font-family:Consolas, 'Andale Mono', 'Lucida Console', 'Lucida Sans Typewriter', Monaco, 'Courier New', 'monospace'; font-size:33px; 
 	color:color:antiquewhite; 
 	vertical-align: middle ;
 }

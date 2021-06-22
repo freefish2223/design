@@ -1,5 +1,5 @@
 @charset "utf-8";
-
+* {box-sizing: border-box;}
 .gridcontainer{
  width:80%;
   display: grid;margin:0 auto;
@@ -56,6 +56,34 @@ nav a {
 }
 #logo1{
 	margin:0 auto;
+}
+
+.img-zoom-container {
+  position: relative;
+}
+
+.img-zoom-lens {
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  /*set the size of the lens:*/
+  width: 40px;
+  height: 40px;
+  border-radius:50%;
+}
+
+.img-zoom-result {
+  position:relative;
+  margin-top:-200px;
+  margin-left:260px;
+  border: 1px solid #d4d4d4;
+  /*set the size of the result div:*/
+  width: 200px;
+  height: 200px;
+  border-radius:50%;
+  visibility:hidden;
+}
+.img-zoom-container:hover .img-zoom-result{
+visibility:visible;
 }
 @media screen and (max-width:768px)
 	
