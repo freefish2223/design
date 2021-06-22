@@ -1,9 +1,8 @@
 @charset "utf-8";
 
 .gridcontainer{
-	width:80%;
-  display: grid;
-	margin:0 auto;
+ width:80%;
+  display: grid;margin:0 auto;
   grid:300px/auto auto auto auto;
   grid-gap: 20px;
    padding:100px 50px;
@@ -39,16 +38,31 @@ pssition:relative;
   width: 100%;
   font-size: 18px;
 }
-
+.menu1{
+	margin-top:-50px;
+}
+#menu1{
+	font-size:18px;
+	padding:25px;
+	text-align:center;
+}
+nav a {
+	text-decoration: none;
+	color:gray;
+	padding:30px;	 
+}
 .card button:hover {
-  opacity: 0.7;
+    opacity: 0.7;
+}
+#logo1{
+	margin:0 auto;
 }
 @media screen and (max-width:768px)
 	
 	
-	@media screen and (max-width:998px){
+@media screen and (max-width:998px){
 		.gridcontainer{
-	width:100%;
+			width:100%;
 }
 }
 @media screen and (max-width:1368px){

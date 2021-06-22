@@ -547,9 +547,10 @@
         width:30px;
         height:30px;
 	    background-color:white;
-		padding:2px;
+		padding:3px;
 		border-radius: 20%;
 		margin-top:20px;
+		filter: grayscale(100%);
 	  }
  .blogo1 {
         width:25px;
