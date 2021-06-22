@@ -16,18 +16,18 @@
   font-family: arial;
 }
 .img1{
-	height: 300px;
-	margin: 0 auto;
+  height: 300px;
+  margin: 0 auto;
 }
 .price {
   color: grey;
   font-size: 22px;
-	margin:10px;
+  margin:10px;
 }
 
 .card button {
 pssition:relative;
-	margin-bottom:0px;
+  margin-bottom:0px;
   border: none;
   outline: 0;
   padding: 12px;
@@ -39,7 +39,7 @@ pssition:relative;
   font-size: 18px;
 }
 .menu1{
-	margin-top:-50px;
+  margin-top:-50px;
 }
 #menu1{
 	font-size:18px;
@@ -61,10 +61,9 @@ nav a {
 	
 	
 @media screen and (max-width:998px){
-		.gridcontainer{
-			width:100%;
-}
-}
+  .gridcontainer{
+	 width:100%;
+}}
 @media screen and (max-width:1368px){
 	
 }
