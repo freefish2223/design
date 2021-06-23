@@ -30,10 +30,8 @@
 #bookarea{
 	position:relative;
 	width:600px;
-	height:480px;
-    top:10px;
-	border:2px solid grey;
-	background-color:rgba(200,200,200,0.9);
+	height:500px;
+	background-color:rgb(111, 188,180, 0.8);
 	margin-left:10%;  
 	-webkit-box-shadow:0 3px 2px #999;
 	-moz-box-shadow:0 3px 2px #999;
@@ -100,7 +98,7 @@ input[type=button], #submit, #submit1, #submit2{
     padding: 12px 25px;
     pointer:cursor;
     cursor:pointer; 
-	background-color:#EFE2C6;
+	background-color:rgb(111, 188,180, 0.7);
 	 
 }
 #submit1{	 	

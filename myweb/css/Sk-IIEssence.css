@@ -1,0 +1,11 @@
+@charset "utf-8";
+/* CSS Document */
+
+.gridcontainer2{
+	display: grid;
+	width:80%;
+	grid-template-columns: auto auto;
+}
+.griditem01{
+	
+}

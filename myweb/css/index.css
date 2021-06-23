@@ -12,7 +12,7 @@
         font-size:20px;
 		font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
 		padding:10px;
-		padding-top:5px;
+		padding-top:6px;
         color:white;
         letter-spacing:6px;
       }    
@@ -29,7 +29,7 @@
 	 vertical-align:middle;
 }
 #promotion span{
-	font-family:Consolas, 'Andale Mono', 'Lucida Console', 'Lucida Sans Typewriter', Monaco, 'Courier New', 'monospace'; font-size:33px; 
+	font-family:Consolas, 'Andale Mono', 'Lucida Console', 'Lucida Sans Typewriter', Monaco, 'Courier New', 'monospace'; font-size:30px; 
 	color:color:antiquewhite; 
 	vertical-align: middle ;
 }
@@ -174,10 +174,10 @@
 		// box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
         }
  .menudropdown a {
-		  text-decoration: none; 
+	  text-decoration: none; 
           padding:15px 30px;          	      
-		  color:#111;         
-	      display:block;
+	  color:#111;         
+	  display:block;
 	           }
  .menudropdown a:hover {
        background-color:#C8A590;
@@ -191,7 +191,7 @@
 	display:none;
 }
 .slideshow-container{
-		 clear:both;
+	 clear:both;
          position:relative;
          width:100%;    
          margin:0 auto;                 
@@ -342,9 +342,18 @@
 	position:absolute;
 	top:20%;
 	left:12%;
-	color:grey;
+	color:#dee;
 	font-size:4vw;
 }
+#wordsbackground{
+ 	position:absolute;
+        top:0;
+        left:10%;
+	width:35%;
+	height:100%;
+    background-color:rgb(111, 188,180, 0.5);	
+}
+
 #botton1{
 	position:absolute;
 	right:0;
@@ -354,6 +363,22 @@
 	position:absolute;
 	right:300px;
 	bottom:0px;
+}
+#aboutus{
+	width:75%;
+	margin:0 auto;
+	text-align: center;
+	font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif" ;
+}
+#aboutus h1{
+	font-size:50px;
+	color:#535050;
+	padding:100px 50px 40px 50px ;
+}
+#aboutus p{
+	font-size:22px;
+	color:grey;
+	line-height: 35px;
 }
 	#serveice{
 		clear:both;
@@ -398,7 +423,7 @@
       }
     .title{	    
 	   margin: 60px 20px;
-       font-family:Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+       font-family:Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
        ext-align: center;
        color: grey;
 	  font-size:50px;
@@ -407,7 +432,8 @@
 	  position:relative;
 	  width:100%;
 	  display:block; 	  
-	  margin:0 auto;	 
+	  margin:0 auto;
+	  border-radius: 50%;
 	  }
 
 .flippic{
