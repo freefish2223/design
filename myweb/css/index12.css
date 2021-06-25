@@ -404,10 +404,6 @@
 	  margin:0 auto;
 	  margin-top:200px;
 }
-
-.body-grid1{
-	grid-template-columns:60% 40%;
-}
 	.grid-item, .grid-item1{
 	  background-color: transparent;
 	  position:relative;
@@ -454,7 +450,7 @@
 .pic{
 	position:relative;
 }
-.facialpicture1{
+.facialpicture1, .facialpicture2{
 	position:absolute;
 	width:100%;
 	display:block; 	  
@@ -466,7 +462,9 @@
 	opacity: 0;
     transition: .5s ease;
 }
-
+ .facialpicture2:hover{
+	 opacity: 1;
+}
   /*   .facialpic1:after {
 	  content: " ";
 	  position: absolute;
