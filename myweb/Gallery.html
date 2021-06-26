@@ -20,17 +20,17 @@
 	<div id="nav-placeholder">
 </div>
 	
-	
-	
-<script>
-$(document).ready(function(){  
-    $("nav a #gallery").addClass("active");
-  });
 
-</script>
+
 <script>
 	$.get("headerfile.html", function(data){
     $("#nav-placeholder").replaceWith(data);
+});
+</script>
+	
+<script>
+$(document).ready(function(){
+    $("nav a #gallery").addClass("active");
 });
 </script>
 </body>
