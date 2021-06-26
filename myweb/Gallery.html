@@ -11,13 +11,23 @@
 <link rel="stylesheet" href="headerfile.html" type="text/html" >
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script type="text/javascript" src="js/index.js"></script> 
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<style>
+	</style>
 </head>
 
 <body>
 	<div id="nav-placeholder">
 </div>
+	
+	
+	
+<script>
+$(document).ready(function(){  
+    $("nav a #gallery").addClass("active");
+  });
 
+</script>
 <script>
 	$.get("headerfile.html", function(data){
     $("#nav-placeholder").replaceWith(data);

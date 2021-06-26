@@ -42,7 +42,6 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }  
 
-
  $(document).on('click','nav a',function(){
 	$(this).addClass('active').siblings().removeClass('active')
 })
