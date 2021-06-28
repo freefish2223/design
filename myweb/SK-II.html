@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+<title>SK-II</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/index.css" type="text/css" >
+<link rel="stylesheet" href="css/SK-II.css" type="text/css" >
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Booknow</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+ <script type="text/javascript" src="js/index.js"></script> 
+</head>
+<body>
+	<div id="nav-placeholder">
+</div>
+
+<div id="SK-II"></div>
+<div class="gridbody">
+<div class="grid2">
+  <img id="expandedImg" img src="Images/sk2.jpg" >
+</div>
+
+<div class="grid1">
+ <div class="column">
+    <img src="Images/sk2.jpg" alt="#" style="width:100%"
+    onclick="myFunction(this);">
+  </div>
+  <div class="column" >
+    <img src="Images/s1.jpg"   alt="#" style="width:100%"  onclick="myFunction(this);"  >
+  </div>
+  <div class="column">
+    <img src="Images/s2.jpg" alt="#" style="width:100%" onclick="myFunction(this);" >
+  </div>
+  <div class="column">
+    <img src="Images/s3.jpg" alt="#" style="width:100%"
+    onclick="myFunction(this);">
+  </div>
+ 
+</div>
+ </div>
+	
+	<div class="item2"></div>
+
+<script>
+	$.get("headerfile.html", function(data){
+    $("#nav-placeholder").replaceWith(data);
+});
+</script>
+	<script>
+function myFunction(imgs) {
+  var expandImg = document.getElementById("expandedImg");
+  expandImg.src = imgs.src;
+  expandImg.style.display = "block";
+}
+</script>
+</body>
+</html>

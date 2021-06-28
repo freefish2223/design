@@ -1,4 +1,10 @@
 <!doctype html>
+
+<style>
+	.active,  .navmenu:hover {
+  background-color: #363535;
+}
+</style>
  
  <div id="winter"> 
   <a href="../myweb/winterspecial.html" target="_blank" > 
@@ -24,19 +30,19 @@
  <a href="https://twitter.com/login/" target="blank" > <img class="blogo" src="../myweb/Images/Twitter.png" alt=""  /></a> <a href="https://www.pinterest.com/" target="blank" > <img class="blogo" src="../myweb/Images/Pinterest.png" alt="" /> </a>
 <br><br>
     <nav id="nav1" >
-     <a class="navmenu" href="../myweb/index.html">Home</a>
+     <a class="navmenu" id="home" href="../myweb/index.html">Home</a>
 	 <div class="homedropdown" >
-     <a  class="navmenu " href="Facialproduct.html">Product</a>
+     <a  class="navmenu " id="product" href="Facialproduct.html">Product</a>
      <div class="dropdown-content">
-     <a href="Facialproduct.html">Facial</a>
-     <a href="Facialproduct.html">Massage</a>
+     <a id="facial" href="Facialproduct.html">Facial</a>
+     <a id="massage" href="Facialproduct.html">Massage</a>
      <a href="Facialproduct.html">Body</a>
      </div>
      </div>      
-    <a class="navmenu" href="../myweb/Booknow.html">Booknow</a>  
+    <a class="navmenu" id="booknow" href="../myweb/Booknow.html">Booknow</a>  
     <a class="navmenu" id="gallery" href="#">Gallery</a> 
     <a class="navmenu" id="contact" href="#">Contact</a>  
-	<a class="navmenu" href="../myweb/winterspecial.html">Coupon</a>  
+	<a class="navmenu" id="coupon" href="../myweb/winterspecial.html">Coupon</a>  
     </nav>
      </div> 
   
@@ -62,3 +68,15 @@
  </div>  
 	  </div>
  
+<script>
+	var elms=document.getElementsByClassName("navmenu");
+	var x = document.getElementsByTagName("title");
+	if (x=="Home"){
+		 elms[0].classList.add("active")
+	}	
+	if (x=="Gallery"){
+		 elms[3].classList.add("active")
+	}
+	
+	
+</script>

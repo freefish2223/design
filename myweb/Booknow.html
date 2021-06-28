@@ -81,7 +81,7 @@ $(document).ready(function(){
      <a href="#">Body</a>
      </div>
      </div>      
-    <a class="navmenu active" href="../myweb/Booknow.html">Booknow</a>  
+    <a class="navmenu" id="booknow" href="../myweb/Booknow.html">Booknow</a>  
     <a class="navmenu" href="#">Gallery</a> 
     <a class="navmenu" href="#">Contact</a>  
 	<a class="navmenu" href="../myweb/winterspecial.html">Coupon</a>  
@@ -221,5 +221,10 @@ For more information, visit nyc.gov/vaccinefinder or call 877-VAX-4NYC (877-829-
 	
 </div>
 
+	<script>
+		$(document).ready(function(){
+            $("#booknow").addClass("active");
+});
+	</script>
 </body>
 </html>

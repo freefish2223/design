@@ -45,3 +45,14 @@ function showSlides(n) {
  $(document).on('click','nav a',function(){
 	$(this).addClass('active').siblings().removeClass('active')
 })
+
+
+	var elms=document.getElementsByClassName("navmenu");
+	var x = document.getElementsByTagName("title");
+	if (x=="Home"){
+		 elms[0].classList.add("active")
+	}	
+	if (x=="Gallery"){
+		 elms[3].classList.add("active")
+	}
+	

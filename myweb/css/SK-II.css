@@ -1,0 +1,40 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: Arial;
+}
+.item1{
+	width:50%;
+}
+.column {
+  width: 100px;
+  padding: 20px;
+
+}
+.column img {
+  opacity: 0.8; 
+  cursor: pointer; 
+}
+.column img:hover {
+  opacity: 1;
+}
+.row{
+	margin-left: 100px;
+	margin-top:200px;
+	width:100px;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container {
+  width:300px;
+
+}
+
