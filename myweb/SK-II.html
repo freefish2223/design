@@ -2,57 +2,228 @@
 <html>
 <head>
 <title>SK-II</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="css/index.css" type="text/css" >
 <link rel="stylesheet" href="css/SK-II.css" type="text/css" >
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Booknow</title>
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link  rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,600&display=swap">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
  <script type="text/javascript" src="js/index.js"></script> 
+	
+<script>
+  function myFunction(imgs) {
+  var expandImg = document.getElementById("expandedImg");
+  expandImg.src = imgs.src;
+   }
+ </script>
+<script> 
+function imageZoom(imgID, resultID) {
+  var img, lens, result, cx, cy, orisrc;
+ 
+	 orisrc = document.getElementsByClassName("column");
+  for(let i = 0; i < orisrc.length; i++){
+     orisrc[i].addEventListener("mouseover", zFunction(this));}
+  function zFunction(imgs) {
+  var img = document.getElementById("imgID");
+  img.src = imgs.src;
+   }
+  result = document.getElementById(resultID);
+  lens = document.createElement("DIV");
+  lens.setAttribute("class", "img-zoom-lens");
+  img.parentElement.insertBefore(lens, img);
+  cx = result.offsetWidth / lens.offsetWidth;
+  cy = result.offsetHeight / lens.offsetHeight;
+  result.style.backgroundImage = "url('" + img.src + "')";
+  result.style.backgroundSize = (img.width * cx) + "px " + (img.height * cy) + "px";
+  lens.addEventListener("mousemove", moveLens);
+  img.addEventListener("mousemove", moveLens);
+  lens.addEventListener("touchmove", moveLens);
+  img.addEventListener("touchmove", moveLens);
+  function moveLens(e) {
+    var pos, x, y;
+    e.preventDefault();
+    pos = getCursorPos(e);
+    x = pos.x - (lens.offsetWidth / 2);
+    y = pos.y - (lens.offsetHeight / 2);
+    if (x > img.width - lens.offsetWidth) {x = img.width - lens.offsetWidth;}
+    if (x < 0) {x = 0;}
+    if (y > img.height - lens.offsetHeight) {y = img.height - lens.offsetHeight;}
+    if (y < 0) {y = 0;}
+    lens.style.left = x + "px";
+    lens.style.top = y + "px";
+    result.style.backgroundPosition = "-" + (x * cx) + "px -" + (y * cy) + "px";
+  }
+  function getCursorPos(e) {
+    var a, x = 0, y = 0;
+    e = e || window.event;
+    a = img.getBoundingClientRect();
+    x = e.pageX - a.left;
+    y = e.pageY - a.top;
+    x = x - window.pageXOffset;
+    y = y - window.pageYOffset;
+    return {x : x, y : y};
+  }
+}
+
+	</script>
 </head>
 <body>
-	<div id="nav-placeholder">
+<div id="nav-placeholder">
 </div>
 
 <div id="SK-II"></div>
 <div class="gridbody">
-<div class="grid2">
-  <img id="expandedImg" img src="Images/sk2.jpg" >
-</div>
-
+<div class="grid1"></div>
 <div class="grid1">
  <div class="column">
-    <img src="Images/sk2.jpg" alt="#" style="width:100%"
-    onclick="myFunction(this);">
+    <img src="Images/sk2.jpg" alt="#" style="width:100%" onmouseover="myFunction(this);">
   </div>
   <div class="column" >
-    <img src="Images/s1.jpg"   alt="#" style="width:100%"  onclick="myFunction(this);"  >
+    <img src="Images/s1.jpg" alt="#" style="width:100%"  onmouseover="myFunction(this);"  >
   </div>
   <div class="column">
-    <img src="Images/s2.jpg" alt="#" style="width:100%" onclick="myFunction(this);" >
+    <img src="Images/s2.jpg" alt="#" style="width:100%" onmouseover="myFunction(this);" >
   </div>
   <div class="column">
-    <img src="Images/s3.jpg" alt="#" style="width:100%"
-    onclick="myFunction(this);">
+    <img src="Images/s3.jpg" alt="#" style="width:100%" onmouseover="myFunction(this);">
+  </div> 
+</div>
+<div class="grid2 img-zoom-container">
+  <img id="expandedImg" src="Images/sk2.jpg" >
+	<div id="myresult" class="img-zoom-result"></div>
+</div>
+	<div class="grid3">
+	<h1> SK-IIPITERA™ Essence Limited Edition </h1><br>
+	<p>Revitalize your skin this spring with new PITERA™ Essence Limited Edition. Celebrate the coming of this season with these dolls fashioned in the bold and vivid colors of spring.</p>
+        <p>A miracle in each drop with over 90% PITERA™ A natural bio-ingredient containing over 50 micro-nutrients like vitamins, minerals, amino acids and organic acids to condition skin’s natural functions.</p><br>
+
+<div class="ratingstar">
+      <div class="post">   </div>
+       <div class="star-widget">
+         <button type="submit" id="btn" onclick="btnFunction()" >Post</button>
+         <i class="arrow down"  onmouseover="showFunction(this)" onmouseout="nonFunction(this);"></i> 
+        <input type="radio" name="rate" id="rate-5">
+        <label for="rate-5" class="fas fa-star"></label>
+        <input type="radio" name="rate" id="rate-4">
+        <label for="rate-4" class="fas fa-star"></label>
+        <input type="radio" name="rate" id="rate-3">
+        <label for="rate-3" class="fas fa-star"></label>
+        <input type="radio" name="rate" id="rate-2">
+        <label for="rate-2" class="fas fa-star"></label>
+        <input type="radio" name="rate" id="rate-1">
+        <label for="rate-1" class="fas fa-star"></label>        
+      </div>
+
+<div id="rating" > 
+<span class="heading">User Rating</span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<p style="font-size:14px;color:grey;">4.1 average based on 254 reviews.</p>
+<hr style="border:3px solid #f1f1f1">
+
+<div class="row1">
+  <div class="side">
+    <div>5 star</div>
   </div>
- 
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-5"></div>
+    </div>
+  </div>
+  <div class="side right">
+    <div>152</div>
+  </div>
+  <div class="side">
+    <div>4 star</div>
+  </div>
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-4"></div>
+    </div>
+  </div>
+  <div class="side right">
+    <div>61</div>
+  </div>
+  <div class="side">
+    <div>3 star</div>
+  </div>
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-3"></div>
+    </div>
+  </div>
+  <div class="side right">
+    <div>16</div>
+  </div>
+  <div class="side">
+    <div>2 star</div>
+  </div>
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-2"></div>
+    </div>
+  </div>
+  <div class="side right">
+    <div>6</div>
+  </div>
+  <div class="side">
+    <div>1 star</div>
+  </div>
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-1"></div>
+    </div>
+  </div>
+  <div class="side right">
+    <div>19</div>
+  </div>
+</div>
+</div>
+    </div>
+	
+<br><br>
+
+<p> $89.99</p>
+
 </div>
  </div>
-	
-	<div class="item2"></div>
 
 <script>
-	$.get("headerfile.html", function(data){
+    $.get("headerfile.html", function(data){
     $("#nav-placeholder").replaceWith(data);
 });
 </script>
-	<script>
-function myFunction(imgs) {
-  var expandImg = document.getElementById("expandedImg");
-  expandImg.src = imgs.src;
-  expandImg.style.display = "block";
+
+   <script>
+      function btnFunction(){
+       alert("Thanks for rating us");
 }
+    </script>
+
+   <script>
+      function showFunction(){
+      var x1 = document.getElementById("rating");
+      x1.style.display="block";
+}
+    </script>
+
+   <script>
+      function nonFunction(){
+      var x1 = document.getElementById("rating");
+      x1.to=setTimeout(function(){ x1.style.display = "none"; },1000)
+}
+    </script>
+<script>
+	imageZoom("expandedImg", "myresult");
 </script>
+	
+
+	
 </body>
 </html>

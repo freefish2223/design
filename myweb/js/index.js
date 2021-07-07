@@ -55,4 +55,5 @@ function showSlides(n) {
 	if (x=="Gallery"){
 		 elms[3].classList.add("active")
 	}
-	
+
+
