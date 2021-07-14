@@ -13,23 +13,24 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
  <script type="text/javascript" src="js/index.js"></script> 
 	
-<script>
+ <script>
   function myFunction(imgs) {
   var expandImg = document.getElementById("expandedImg");
   expandImg.src = imgs.src;
    }
- </script>
+ </script>  
 <script> 
 function imageZoom(imgID, resultID) {
   var img, lens, result, cx, cy, orisrc;
- 
-	 orisrc = document.getElementsByClassName("column");
+
+ /*  orisrc = document.getElementsByClassName("column");
   for(let i = 0; i < orisrc.length; i++){
-     orisrc[i].addEventListener("mouseover", zFunction(this));}
-  function zFunction(imgs) {
-  var img = document.getElementById("imgID");
-  img.src = imgs.src;
-   }
+     orisrc[i].addEventListener("mouseover", myFunction(this));}
+    function myFunction(imgs) {
+  var expandImg = document.getElementById(imgID);
+  expandImg.src = imgs.src;
+   } */
+  img = document.getElementById(imgID);
   result = document.getElementById(resultID);
   lens = document.createElement("DIV");
   lens.setAttribute("class", "img-zoom-lens");
@@ -92,7 +93,7 @@ function imageZoom(imgID, resultID) {
   </div> 
 </div>
 <div class="grid2 img-zoom-container">
-  <img id="expandedImg" src="Images/sk2.jpg" >
+  <img id="expandedImg" src="Images/sk2.jpg" style="width:90%">
 	<div id="myresult" class="img-zoom-result"></div>
 </div>
 	<div class="grid3">
@@ -189,8 +190,8 @@ function imageZoom(imgID, resultID) {
 	
 <br><br>
 
-<p> $89.99</p>
-
+<p> $89.99</p> <br><br>
+<botton id="addcart"> Add To Cart</botton>
 </div>
  </div>
 

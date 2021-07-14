@@ -105,6 +105,7 @@ input:checked ~ label{
   position:absolute;
   width:260px;
   font-size:14px;
+  z-index:99;
   border: 1px solid lightgrey;
   padding:20px;
   box-shadow: 2px 2px #eee;
@@ -193,11 +194,24 @@ input:checked ~ label{
   margin-left:260px;
   border: 1px solid #d4d4d4;
   /*set the size of the result div:*/
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 250px;
   border-radius:50%;
   visibility:hidden;
 }
 .img-zoom-container:hover .img-zoom-result{
 visibility:visible;
 }
+
+#addcart{
+  margin-top:80px;
+  font-size:20px;
+  padding:10px 20px;
+  color:white;
+  background-color:black;
+}
+#addcart:hover{
+  background-color:brown;
+}
+
+
