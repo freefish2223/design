@@ -3,18 +3,8 @@
 #winter1{
 	margin:0 auto;
 	margin-top:100px;
-	width:480px;
-	height: 350px;
-	background:#D4F1E2;	 
-	padding:10px;
-	border: 10px dashed  #CFE7B6;
-	border-radius: 30px;
-	//background-image:url("../Images/border.png");
-		-moz-background-size: 100% 100%;  
-    -o-background-size: 100% 100%;  
-    -webkit-background-size: 100% 100%;  
-    background-size: 100% 100%;  
-    background-repeat:no-repeat;  
+	text-align:center; 
+        width:500px;
 }
  
 #winterspecial{
