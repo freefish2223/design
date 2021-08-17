@@ -23,21 +23,20 @@
 function imageZoom(imgID, resultID) {
   var img, lens, result, cx, cy, orisrc;
 
- /*  orisrc = document.getElementsByClassName("column");
-  for(let i = 0; i < orisrc.length; i++){
-     orisrc[i].addEventListener("mouseover", myFunction(this));}
-    function myFunction(imgs) {
-  var expandImg = document.getElementById(imgID);
-  expandImg.src = imgs.src;
-   } */
   img = document.getElementById(imgID);
+  orisrc = document.getElementsByClassName( "column1");
+  for(var i=0; i < orisrc.length; i++){
+  orisrc[i].addEventListener("mouseover", function(){
+  img.src = orisrc[i].src;
+})
+}
   result = document.getElementById(resultID);
   lens = document.createElement("DIV");
   lens.setAttribute("class", "img-zoom-lens");
   img.parentElement.insertBefore(lens, img);
   cx = result.offsetWidth / lens.offsetWidth;
   cy = result.offsetHeight / lens.offsetHeight;
-  result.style.backgroundImage = "url('" + img.src + "')";
+  result.style.backgroundImage = "url('" +  img.src + "')";
   result.style.backgroundSize = (img.width * cx) + "px " + (img.height * cy) + "px";
   lens.addEventListener("mousemove", moveLens);
   img.addEventListener("mousemove", moveLens);
@@ -80,16 +79,16 @@ function imageZoom(imgID, resultID) {
 <div class="grid1"></div>
 <div class="grid1">
  <div class="column">
-    <img src="Images/sk2.jpg" alt="#" style="width:100%" onmouseover="myFunction(this);">
+    <img class="column1" src="Images/sk2.jpg" alt="#" style="width:100%" onmouseover="myFunction(this);">
   </div>
   <div class="column" >
-    <img src="Images/s1.jpg" alt="#" style="width:100%"  onmouseover="myFunction(this);"  >
+    <img class="column1" src="Images/s1.jpg" alt="#" style="width:100%"  onmouseover="myFunction(this);"  >
   </div>
   <div class="column">
-    <img src="Images/s2.jpg" alt="#" style="width:100%" onmouseover="myFunction(this);" >
+    <img class="column1" src="Images/s2.jpg" alt="#" style="width:100%" onmouseover="myFunction(this);" >
   </div>
   <div class="column">
-    <img src="Images/s3.jpg" alt="#" style="width:100%" onmouseover="myFunction(this);">
+    <img class="column1" src="Images/s3.jpg" alt="#" style="width:100%" onmouseover="myFunction(this);">
   </div> 
 </div>
 <div class="grid2 img-zoom-container">
